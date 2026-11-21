@@ -1,0 +1,3222 @@
+{
+ "ver": 1795166677332,
+ "frame": {
+  "w": 800,
+  "h": 2108
+ },
+ "body": "bones/body_composite.webp",
+ "scopes": [
+  {
+   "id": "limbs",
+   "name": "四肢骨",
+   "parent": null
+  },
+  {
+   "id": "upper",
+   "name": "上肢骨",
+   "parent": "limbs",
+   "open": true
+  },
+  {
+   "id": "lower",
+   "name": "下肢骨",
+   "parent": "limbs",
+   "open": true
+  },
+  {
+   "id": "skull",
+   "name": "颅骨",
+   "parent": null,
+   "open": true
+  },
+  {
+   "id": "trunk",
+   "name": "躯干骨",
+   "parent": null,
+   "open": true
+  }
+ ],
+ "questions": [
+  {
+   "id": "i_frontal_bone",
+   "kind": "img",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "frontal_bone",
+   "target": "frontal_bone",
+   "name": "额骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/frontal_bone.webp",
+   "hint": "构成前额与眶上壁的单块扁骨，内含额窦。",
+   "explain": "额骨：构成前额与眶上壁的单块扁骨，内含额窦。鳞部构成额部轮廓；眶部构成眶顶；鼻部与筛骨、鼻骨相接。"
+  },
+  {
+   "id": "i_mandible",
+   "kind": "img",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "mandible",
+   "target": "mandible",
+   "name": "下颌骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/mandible.webp",
+   "hint": "面颅中唯一能活动的骨，呈马蹄铁形。",
+   "explain": "下颌骨：面颅中唯一能活动的骨，呈马蹄铁形。分一体两支；髁突参与颞下颌关节；牙槽突容纳下牙。"
+  },
+  {
+   "id": "i_sternum",
+   "kind": "img",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "sternum",
+   "target": "sternum",
+   "name": "胸骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/sternum.webp",
+   "hint": "位于胸前壁正中的扁骨。",
+   "explain": "胸骨：位于胸前壁正中的扁骨。分柄、体、剑突三部；胸骨角平对第 2 肋；两侧接肋切迹。"
+  },
+  {
+   "id": "i_rib",
+   "kind": "img",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "rib",
+   "target": "rib",
+   "name": "肋骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/rib.webp",
+   "hint": "胸廓两侧成对的弓形扁骨，后端接胸椎，前端借肋软骨连向胸骨。",
+   "explain": "肋骨 · 第7肋：肋共 12 对；第 7 肋为真肋代表。1–7 真肋借肋软骨直连胸骨；8–10 假肋连于上位肋软骨；11–12 浮肋前端游离。"
+  },
+  {
+   "id": "i_lumbar_vertebra",
+   "kind": "img",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "lumbar_vertebra",
+   "target": "lumbar_vertebra",
+   "name": "腰椎",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/lumbar_vertebra.webp",
+   "hint": "脊柱腰段粗壮的椎骨，共 5 块，棘突宽短呈板状、水平后伸。",
+   "explain": "腰椎 · L3：腰椎共 5 块，椎体粗壮、承重大。椎孔呈三角形；棘突宽短呈板状、水平后伸；关节突关节面近矢状位。"
+  },
+  {
+   "id": "i_sacrum",
+   "kind": "img",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "sacrum",
+   "target": "sacrum",
+   "name": "骶骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/sacrum.webp",
+   "hint": "脊柱下端由 5 块椎骨融合成的三角形骨，夹于两侧髋骨之间。",
+   "explain": "骶骨：5 块骶椎融合成的三角形骨。底前缘的岬为产科标志；骶前、后孔通骶神经；耳状面与髋骨构成骶髂关节。"
+  },
+  {
+   "id": "i_clavicle",
+   "kind": "img",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "clavicle",
+   "target": "clavicle",
+   "name": "锁骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/clavicle.webp",
+   "hint": "S 形长骨，横架于胸廓前上方。",
+   "explain": "锁骨：S 形长骨，横架于胸廓前上方。内端接胸骨、外端接肩峰；上肢与躯干间唯一的骨性支架；中、外 1/3 交界处易骨折。"
+  },
+  {
+   "id": "i_scapula",
+   "kind": "img",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "scapula",
+   "target": "scapula",
+   "name": "肩胛骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/scapula.webp",
+   "hint": "三角形扁骨，贴于胸廓后外侧面。",
+   "explain": "肩胛骨：三角形扁骨，贴于胸廓后外侧面。关节盂接肱骨头；肩峰为肩部最高点；喙突供肌与韧带附着。"
+  },
+  {
+   "id": "i_humerus",
+   "kind": "img",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "humerus",
+   "target": "humerus",
+   "name": "肱骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/humerus.webp",
+   "hint": "上臂的长骨。",
+   "explain": "肱骨：上臂的长骨。肱骨头接关节盂；大、小结节供肩袖肌附着；下端滑车与肱骨小头接前臂骨。"
+  },
+  {
+   "id": "i_radius",
+   "kind": "img",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "radius",
+   "target": "radius",
+   "name": "桡骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/radius.webp",
+   "hint": "前臂外侧（拇指侧）的长骨。",
+   "explain": "桡骨：前臂外侧（拇指侧）的长骨。桡骨头接肱骨小头；下端粗大、接腕骨；与尺骨构成桡尺近、远侧关节，司旋前旋后。"
+  },
+  {
+   "id": "i_ulna",
+   "kind": "img",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "ulna",
+   "target": "ulna",
+   "name": "尺骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/ulna.webp",
+   "hint": "前臂内侧（小指侧）的长骨。",
+   "explain": "尺骨：前臂内侧（小指侧）的长骨。滑车切迹抱肱骨滑车；鹰嘴为肘后皮下标志；下端细小，头接桡骨。"
+  },
+  {
+   "id": "i_hip_bone",
+   "kind": "img",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "hip_bone",
+   "target": "hip_bone",
+   "name": "髋骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/hip_bone.webp",
+   "hint": "髂、坐、耻三骨融合成的不规则骨。",
+   "explain": "髋骨：髂、坐、耻三骨融合成的不规则骨。三骨会于髋臼、接股骨头；耳状面接骶骨；两侧髋骨与骶尾骨围成骨盆。"
+  },
+  {
+   "id": "i_femur",
+   "kind": "img",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "femur",
+   "target": "femur",
+   "name": "股骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/femur.webp",
+   "hint": "人体最长、最粗的长骨。",
+   "explain": "股骨：人体最长、最粗的长骨。股骨头接髋臼；颈干角约 125°；大转子为体表标志；下端内、外侧髁接胫骨。"
+  },
+  {
+   "id": "i_patella",
+   "kind": "img",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "patella",
+   "target": "patella",
+   "name": "髌骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/patella.webp",
+   "hint": "人体最大的籽骨，包于股四头肌腱内。",
+   "explain": "髌骨：人体最大的籽骨，包于股四头肌腱内。后面关节面接股骨髌面；保护膝关节并增大股四头肌力臂。"
+  },
+  {
+   "id": "i_tibia",
+   "kind": "img",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "tibia",
+   "target": "tibia",
+   "name": "胫骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/tibia.webp",
+   "hint": "小腿内侧粗大的承重骨。",
+   "explain": "胫骨：小腿内侧粗大的承重骨。上端内、外侧髁接股骨；胫骨粗隆接髌韧带；下端内踝为踝部标志。"
+  },
+  {
+   "id": "i_fibula",
+   "kind": "img",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "fibula",
+   "target": "fibula",
+   "name": "腓骨",
+   "label": "人体骨架 · 前面观",
+   "mask": "bones/masks/fibula.webp",
+   "hint": "小腿外侧的细长骨，不直接承重。",
+   "explain": "腓骨：小腿外侧的细长骨，不直接承重。腓骨头接胫骨外侧髁；下端外踝构成踝穴外壁；供小腿肌附着。"
+  },
+  {
+   "id": "mi_frontal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "frontal_bone",
+   "img": "bones/skull/frontal_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "蝶骨",
+    "额骨",
+    "鼻骨",
+    "颞骨"
+   ],
+   "answer": 1,
+   "hint": "构成前额与眶上壁的单块扁骨，内含额窦。",
+   "explain": "额骨：构成前额与眶上壁的单块扁骨，内含额窦。鳞部构成额部轮廓；眶部构成眶顶；鼻部与筛骨、鼻骨相接。"
+  },
+  {
+   "id": "mi_parietal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "parietal_bone",
+   "img": "bones/skull/parietal_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "腭骨",
+    "上颌骨",
+    "鼻骨",
+    "顶骨"
+   ],
+   "answer": 3,
+   "hint": "成对扁骨，构成颅顶两侧壁。",
+   "explain": "顶骨：成对扁骨，构成颅顶两侧壁。冠状缝接额骨；矢状缝接对侧顶骨；人字缝接枕骨。"
+  },
+  {
+   "id": "mi_temporal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "temporal_bone",
+   "img": "bones/skull/temporal_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "腭骨",
+    "枕骨",
+    "颞骨",
+    "泪骨"
+   ],
+   "answer": 2,
+   "hint": "成对，位于颅侧壁下部并参与颅底构成。",
+   "explain": "颞骨：成对，位于颅侧壁下部并参与颅底构成。分鳞部、鼓部、岩部；岩部内藏位听器；下颌窝与下颌骨髁突构成颞下颌关节。"
+  },
+  {
+   "id": "mi_occipital_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "occipital_bone",
+   "img": "bones/skull/occipital_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "蝶骨",
+    "枕骨",
+    "筛骨",
+    "犁骨"
+   ],
+   "answer": 1,
+   "hint": "单块，位于颅的后下壁。",
+   "explain": "枕骨：单块，位于颅的后下壁。枕骨大孔通椎管；枕髁与寰椎相关节；上、下项线供颈肌附着。"
+  },
+  {
+   "id": "mi_sphenoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "sphenoid_bone",
+   "img": "bones/skull/sphenoid_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "顶骨",
+    "蝶骨",
+    "鼻骨",
+    "颞骨"
+   ],
+   "answer": 1,
+   "hint": "单块，居颅底中央，形似蝴蝶。",
+   "explain": "蝶骨：单块，居颅底中央，形似蝴蝶。分体、大翼、小翼、翼突；垂体窝容纳垂体；视神经管、眶上裂等孔裂通行神经血管。"
+  },
+  {
+   "id": "mi_ethmoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "ethmoid_bone",
+   "img": "bones/skull/ethmoid_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "颞骨",
+    "鼻骨",
+    "额骨",
+    "筛骨"
+   ],
+   "answer": 3,
+   "hint": "单块，介于鼻腔顶与眶内侧壁之间。",
+   "explain": "筛骨：单块，介于鼻腔顶与眶内侧壁之间。筛板构成颅前窝底；筛窦开口于鼻腔；垂直板参与鼻中隔。"
+  },
+  {
+   "id": "mi_mandible",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "mandible",
+   "img": "bones/skull/mandible_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "颞骨",
+    "舌骨",
+    "下颌骨",
+    "泪骨"
+   ],
+   "answer": 2,
+   "hint": "面颅中唯一能活动的骨，呈马蹄铁形。",
+   "explain": "下颌骨：面颅中唯一能活动的骨，呈马蹄铁形。分一体两支；髁突参与颞下颌关节；牙槽突容纳下牙。"
+  },
+  {
+   "id": "mi_maxilla",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "maxilla",
+   "img": "bones/skull/maxilla_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "泪骨",
+    "上颌骨",
+    "额骨",
+    "蝶骨"
+   ],
+   "answer": 1,
+   "hint": "成对，构成面中部支架。",
+   "explain": "上颌骨：成对，构成面中部支架。内含上颌窦；牙槽突容纳上牙；参与眶底、鼻腔外侧壁与硬腭。"
+  },
+  {
+   "id": "mi_zygomatic_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "zygomatic_bone",
+   "img": "bones/skull/zygomatic_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "下鼻甲",
+    "下颌骨",
+    "颧骨",
+    "枕骨"
+   ],
+   "answer": 2,
+   "hint": "成对，构成面颊隆起与眶外下壁。",
+   "explain": "颧骨：成对，构成面颊隆起与眶外下壁。与颞骨颧突构成颧弓；借额突、上颌突、颞突三向连接。"
+  },
+  {
+   "id": "mi_nasal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "nasal_bone",
+   "img": "bones/skull/nasal_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "顶骨",
+    "颞骨",
+    "泪骨",
+    "鼻骨"
+   ],
+   "answer": 3,
+   "hint": "成对小骨，构成鼻背支架。",
+   "explain": "鼻骨：成对小骨，构成鼻背支架。上接额骨鼻部；下外侧接上颌骨额突；面部外伤时易骨折。"
+  },
+  {
+   "id": "mi_lacrimal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "lacrimal_bone",
+   "img": "bones/skull/lacrimal_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "泪骨",
+    "枕骨",
+    "筛骨",
+    "下鼻甲"
+   ],
+   "answer": 0,
+   "hint": "成对，眶内侧壁最前部的小薄骨。",
+   "explain": "泪骨：成对，眶内侧壁最前部的小薄骨。与上颌骨额突围成泪囊窝；泪囊向下通鼻泪管。"
+  },
+  {
+   "id": "mi_palatine_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "palatine_bone",
+   "img": "bones/skull/palatine_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "颧骨",
+    "下鼻甲",
+    "舌骨",
+    "腭骨"
+   ],
+   "answer": 3,
+   "hint": "成对 L 形小骨，位于鼻腔后部。",
+   "explain": "腭骨：成对 L 形小骨，位于鼻腔后部。水平板构成硬腭后 1/3；垂直板参与鼻腔外侧壁。"
+  },
+  {
+   "id": "mi_inferior_nasal_concha",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "inferior_nasal_concha",
+   "img": "bones/skull/inferior_nasal_concha_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "泪骨",
+    "顶骨",
+    "舌骨",
+    "下鼻甲"
+   ],
+   "answer": 3,
+   "hint": "成对卷曲薄骨，附于鼻腔外侧壁。",
+   "explain": "下鼻甲：成对卷曲薄骨，附于鼻腔外侧壁。为独立骨，非筛骨一部分；增大鼻腔黏膜面积；下方为下鼻道。"
+  },
+  {
+   "id": "mi_vomer",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "vomer",
+   "img": "bones/skull/vomer_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "犁骨",
+    "枕骨",
+    "腭骨",
+    "筛骨"
+   ],
+   "answer": 0,
+   "hint": "单块薄骨，构成鼻中隔后下部。",
+   "explain": "犁骨：单块薄骨，构成鼻中隔后下部。上接筛骨垂直板；下接上颌骨与腭骨的腭突。"
+  },
+  {
+   "id": "mi_hyoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "bone": "hyoid_bone",
+   "img": "bones/skull/hyoid_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "上颌骨",
+    "犁骨",
+    "舌骨",
+    "泪骨"
+   ],
+   "answer": 2,
+   "hint": "单块 U 形小骨，悬于颈部皮下。",
+   "explain": "舌骨：单块 U 形小骨，悬于颈部皮下。不与任何骨直接相关节；借肌和韧带悬于颞骨茎突；为吞咽与发音肌的附着点。"
+  },
+  {
+   "id": "mi_atlas",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "atlas",
+   "img": "bones/trunk/atlas_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "枢椎 · C2",
+    "尾骨",
+    "寰椎 · C1",
+    "颈椎 · C7"
+   ],
+   "answer": 2,
+   "hint": "第 1 颈椎，无椎体与棘突，呈环形。",
+   "explain": "寰椎 · C1：第 1 颈椎，无椎体与棘突，呈环形。侧块上关节凹接枕髁；前弓后面有齿突凹；与枢椎共司点头与旋转。"
+  },
+  {
+   "id": "mi_axis",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "axis",
+   "img": "bones/trunk/axis_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "尾骨",
+    "腰椎 · L3",
+    "胸椎 · T5",
+    "枢椎 · C2"
+   ],
+   "answer": 3,
+   "hint": "第 2 颈椎，椎体向上伸出齿突。",
+   "explain": "枢椎 · C2：第 2 颈椎，椎体向上伸出齿突。齿突作旋转轴；寰枢关节司摇头；棘突粗大、末端分叉。"
+  },
+  {
+   "id": "mi_cervical_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "cervical_vertebra",
+   "img": "bones/trunk/cervical_vertebra_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "颈椎 · C7",
+    "骶骨",
+    "尾骨",
+    "腰椎 · L3"
+   ],
+   "answer": 0,
+   "hint": "颈椎共 7 块；C7 棘突特长，称隆椎。",
+   "explain": "颈椎 · C7：颈椎共 7 块；C7 棘突特长，称隆椎。横突孔通椎动脉；椎体小、椎孔大；C7 棘突为计数椎骨的标志。"
+  },
+  {
+   "id": "mi_thoracic_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "thoracic_vertebra",
+   "img": "bones/trunk/thoracic_vertebra_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "颈椎 · C7",
+    "寰椎 · C1",
+    "胸椎 · T5",
+    "胸骨"
+   ],
+   "answer": 2,
+   "hint": "胸椎共 12 块，与肋相关节。",
+   "explain": "胸椎 · T5：胸椎共 12 块，与肋相关节。椎体两侧有肋凹；横突末端有横突肋凹；棘突长，叠瓦状斜向下。"
+  },
+  {
+   "id": "mi_lumbar_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "lumbar_vertebra",
+   "img": "bones/trunk/lumbar_vertebra_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "胸骨",
+    "寰椎 · C1",
+    "腰椎 · L3",
+    "枢椎 · C2"
+   ],
+   "answer": 2,
+   "hint": "腰椎共 5 块，椎体粗壮、承重大。",
+   "explain": "腰椎 · L3：腰椎共 5 块，椎体粗壮、承重大。椎孔呈三角形；棘突宽短呈板状、水平后伸；关节突关节面近矢状位。"
+  },
+  {
+   "id": "mi_sacrum",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "sacrum",
+   "img": "bones/trunk/sacrum_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "骶骨",
+    "寰椎 · C1",
+    "胸骨",
+    "胸椎 · T5"
+   ],
+   "answer": 0,
+   "hint": "5 块骶椎融合成的三角形骨。",
+   "explain": "骶骨：5 块骶椎融合成的三角形骨。底前缘的岬为产科标志；骶前、后孔通骶神经；耳状面与髋骨构成骶髂关节。"
+  },
+  {
+   "id": "mi_rib",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "rib",
+   "img": "bones/trunk/rib_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "胸椎 · T5",
+    "枢椎 · C2",
+    "肋骨 · 第7肋",
+    "寰椎 · C1"
+   ],
+   "answer": 2,
+   "hint": "肋共 12 对；第 7 肋为真肋代表。",
+   "explain": "肋骨 · 第7肋：肋共 12 对；第 7 肋为真肋代表。1–7 真肋借肋软骨直连胸骨；8–10 假肋连于上位肋软骨；11–12 浮肋前端游离。"
+  },
+  {
+   "id": "mi_sternum",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "sternum",
+   "img": "bones/trunk/sternum_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "腰椎 · L3",
+    "骶骨",
+    "胸骨",
+    "肋骨 · 第7肋"
+   ],
+   "answer": 2,
+   "hint": "位于胸前壁正中的扁骨。",
+   "explain": "胸骨：位于胸前壁正中的扁骨。分柄、体、剑突三部；胸骨角平对第 2 肋；两侧接肋切迹。"
+  },
+  {
+   "id": "mi_clavicle",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "clavicle",
+   "img": "bones/upper/clavicle_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "手舟骨",
+    "月状骨",
+    "大多角骨",
+    "锁骨"
+   ],
+   "answer": 3,
+   "hint": "S 形长骨，横架于胸廓前上方。",
+   "explain": "锁骨：S 形长骨，横架于胸廓前上方。内端接胸骨、外端接肩峰；上肢与躯干间唯一的骨性支架；中、外 1/3 交界处易骨折。"
+  },
+  {
+   "id": "mi_scapula",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "scapula",
+   "img": "bones/upper/scapula_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "头状骨",
+    "指骨 · 近节",
+    "尺骨",
+    "肩胛骨"
+   ],
+   "answer": 3,
+   "hint": "三角形扁骨，贴于胸廓后外侧面。",
+   "explain": "肩胛骨：三角形扁骨，贴于胸廓后外侧面。关节盂接肱骨头；肩峰为肩部最高点；喙突供肌与韧带附着。"
+  },
+  {
+   "id": "mi_humerus",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "humerus",
+   "img": "bones/upper/humerus_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "钩骨",
+    "肩胛骨",
+    "尺骨",
+    "肱骨"
+   ],
+   "answer": 3,
+   "hint": "上臂的长骨。",
+   "explain": "肱骨：上臂的长骨。肱骨头接关节盂；大、小结节供肩袖肌附着；下端滑车与肱骨小头接前臂骨。"
+  },
+  {
+   "id": "mi_radius",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "radius",
+   "img": "bones/upper/radius_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "桡骨",
+    "指骨 · 近节",
+    "锁骨",
+    "三角骨"
+   ],
+   "answer": 0,
+   "hint": "前臂外侧（拇指侧）的长骨。",
+   "explain": "桡骨：前臂外侧（拇指侧）的长骨。桡骨头接肱骨小头；下端粗大、接腕骨；与尺骨构成桡尺近、远侧关节，司旋前旋后。"
+  },
+  {
+   "id": "mi_ulna",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "ulna",
+   "img": "bones/upper/ulna_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "锁骨",
+    "三角骨",
+    "尺骨",
+    "小多角骨"
+   ],
+   "answer": 2,
+   "hint": "前臂内侧（小指侧）的长骨。",
+   "explain": "尺骨：前臂内侧（小指侧）的长骨。滑车切迹抱肱骨滑车；鹰嘴为肘后皮下标志；下端细小，头接桡骨。"
+  },
+  {
+   "id": "mi_scaphoid",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "scaphoid",
+   "img": "bones/upper/scaphoid_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "指骨 · 近节",
+    "手舟骨",
+    "掌骨 · 第3",
+    "大多角骨"
+   ],
+   "answer": 1,
+   "hint": "近侧列腕骨外侧者，形似小船。",
+   "explain": "手舟骨：近侧列腕骨外侧者，形似小船。腰部血供差，骨折易不愈合；鼻烟窝压痛为骨折常见体征。"
+  },
+  {
+   "id": "mi_lunate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "lunate",
+   "img": "bones/upper/lunate_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "月状骨",
+    "大多角骨",
+    "钩骨",
+    "指骨 · 近节"
+   ],
+   "answer": 0,
+   "hint": "近侧列腕骨中央者，呈半月形。",
+   "explain": "月状骨：近侧列腕骨中央者，呈半月形。与桡骨下端相关节；脱位可压迫正中神经。"
+  },
+  {
+   "id": "mi_triquetral",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "triquetral",
+   "img": "bones/upper/triquetral_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "大多角骨",
+    "三角骨",
+    "头状骨",
+    "小多角骨"
+   ],
+   "answer": 1,
+   "hint": "近侧列腕骨内侧者。",
+   "explain": "三角骨：近侧列腕骨内侧者。掌侧面接豌豆骨；参与腕尺侧稳定。"
+  },
+  {
+   "id": "mi_pisiform",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "pisiform",
+   "img": "bones/upper/pisiform_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "钩骨",
+    "肩胛骨",
+    "豌豆骨",
+    "三角骨"
+   ],
+   "answer": 2,
+   "hint": "籽骨样小骨，位于三角骨掌侧。",
+   "explain": "豌豆骨：籽骨样小骨，位于三角骨掌侧。包于尺侧腕屈肌腱内；为腕尺侧的皮下标志。"
+  },
+  {
+   "id": "mi_trapezium",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "trapezium",
+   "img": "bones/upper/trapezium_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "钩骨",
+    "桡骨",
+    "月状骨",
+    "大多角骨"
+   ],
+   "answer": 3,
+   "hint": "远侧列腕骨外侧者。",
+   "explain": "大多角骨：远侧列腕骨外侧者。鞍状关节面接第 1 掌骨；司拇指对掌的灵活运动。"
+  },
+  {
+   "id": "mi_trapezoid",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "trapezoid",
+   "img": "bones/upper/trapezoid_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "肩胛骨",
+    "小多角骨",
+    "锁骨",
+    "三角骨"
+   ],
+   "answer": 1,
+   "hint": "远侧列腕骨中最小者。",
+   "explain": "小多角骨：远侧列腕骨中最小者。接第 2 掌骨底；与大多角骨、头状骨相邻。"
+  },
+  {
+   "id": "mi_capitate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "capitate",
+   "img": "bones/upper/capitate_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "三角骨",
+    "手舟骨",
+    "小多角骨",
+    "头状骨"
+   ],
+   "answer": 3,
+   "hint": "腕骨中最大者，居中央。",
+   "explain": "头状骨：腕骨中最大者，居中央。头接月骨；底接第 3 掌骨；为腕骨排列的中心标志。"
+  },
+  {
+   "id": "mi_hamate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "hamate",
+   "img": "bones/upper/hamate_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "掌骨 · 第3",
+    "钩骨",
+    "指骨 · 近节",
+    "小多角骨"
+   ],
+   "answer": 1,
+   "hint": "远侧列腕骨内侧者。",
+   "explain": "钩骨：远侧列腕骨内侧者。掌侧钩突构成腕管尺侧壁；接第 4、5 掌骨。"
+  },
+  {
+   "id": "mi_metacarpal",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "metacarpal",
+   "img": "bones/upper/metacarpal_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "桡骨",
+    "肩胛骨",
+    "手舟骨",
+    "掌骨 · 第3"
+   ],
+   "answer": 3,
+   "hint": "掌骨共 5 块，第 3 掌骨为代表。",
+   "explain": "掌骨 · 第3：掌骨共 5 块，第 3 掌骨为代表。底接腕骨、头接指骨；第 1 掌骨短粗、司拇指；第 3 掌骨底背面有茎突。"
+  },
+  {
+   "id": "mi_proximal_phalanx_of_finger",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "bone": "proximal_phalanx_of_finger",
+   "img": "bones/upper/proximal_phalanx_of_finger_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "指骨 · 近节",
+    "肩胛骨",
+    "豌豆骨",
+    "锁骨"
+   ],
+   "answer": 0,
+   "hint": "指骨每手 14 块：拇指 2 节，余指 3 节。",
+   "explain": "指骨 · 近节：指骨每手 14 块：拇指 2 节，余指 3 节。近节底接掌骨头；滑车与中节相关节；骨折后影响握拳功能。"
+  },
+  {
+   "id": "mi_hip_bone",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "hip_bone",
+   "img": "bones/lower/hip_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "髋骨",
+    "跟骨",
+    "外侧楔骨",
+    "腓骨"
+   ],
+   "answer": 0,
+   "hint": "髂、坐、耻三骨融合成的不规则骨。",
+   "explain": "髋骨：髂、坐、耻三骨融合成的不规则骨。三骨会于髋臼、接股骨头；耳状面接骶骨；两侧髋骨与骶尾骨围成骨盆。"
+  },
+  {
+   "id": "mi_femur",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "femur",
+   "img": "bones/lower/femur_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "股骨",
+    "骰骨",
+    "跖骨 · 第3",
+    "髌骨"
+   ],
+   "answer": 0,
+   "hint": "人体最长、最粗的长骨。",
+   "explain": "股骨：人体最长、最粗的长骨。股骨头接髋臼；颈干角约 125°；大转子为体表标志；下端内、外侧髁接胫骨。"
+  },
+  {
+   "id": "mi_patella",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "patella",
+   "img": "bones/lower/patella_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "髌骨",
+    "腓骨",
+    "骰骨",
+    "髋骨"
+   ],
+   "answer": 0,
+   "hint": "人体最大的籽骨，包于股四头肌腱内。",
+   "explain": "髌骨：人体最大的籽骨，包于股四头肌腱内。后面关节面接股骨髌面；保护膝关节并增大股四头肌力臂。"
+  },
+  {
+   "id": "mi_tibia",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "tibia",
+   "img": "bones/lower/tibia_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "髌骨",
+    "髋骨",
+    "腓骨",
+    "胫骨"
+   ],
+   "answer": 3,
+   "hint": "小腿内侧粗大的承重骨。",
+   "explain": "胫骨：小腿内侧粗大的承重骨。上端内、外侧髁接股骨；胫骨粗隆接髌韧带；下端内踝为踝部标志。"
+  },
+  {
+   "id": "mi_fibula",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "fibula",
+   "img": "bones/lower/fibula_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "股骨",
+    "腓骨",
+    "胫骨",
+    "中间楔骨"
+   ],
+   "answer": 1,
+   "hint": "小腿外侧的细长骨，不直接承重。",
+   "explain": "腓骨：小腿外侧的细长骨，不直接承重。腓骨头接胫骨外侧髁；下端外踝构成踝穴外壁；供小腿肌附着。"
+  },
+  {
+   "id": "mi_talus",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "talus",
+   "img": "bones/lower/talus_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "距骨",
+    "内侧楔骨",
+    "趾骨 · 近节",
+    "外侧楔骨"
+   ],
+   "answer": 0,
+   "hint": "跗骨最上方者，承接小腿重量。",
+   "explain": "距骨：跗骨最上方者，承接小腿重量。滑车接胫、腓骨下端；头接足舟骨；无肌附着、血供较差。"
+  },
+  {
+   "id": "mi_calcaneus",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "calcaneus",
+   "img": "bones/lower/calcaneus_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "股骨",
+    "外侧楔骨",
+    "跟骨",
+    "腓骨"
+   ],
+   "answer": 2,
+   "hint": "最大的跗骨，构成足跟。",
+   "explain": "跟骨：最大的跗骨，构成足跟。跟结节接跟腱；上面接距骨；载距突承托距骨颈。"
+  },
+  {
+   "id": "mi_navicular_bone_of_foot",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "navicular_bone_of_foot",
+   "img": "bones/lower/navicular_bone_of_foot_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "中间楔骨",
+    "趾骨 · 近节",
+    "足舟骨",
+    "股骨"
+   ],
+   "answer": 2,
+   "hint": "跗骨内侧者，位于距骨头前方。",
+   "explain": "足舟骨：跗骨内侧者，位于距骨头前方。内侧面舟骨粗隆为体表标志；前接三块楔骨。"
+  },
+  {
+   "id": "mi_cuboid_bone",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "cuboid_bone",
+   "img": "bones/lower/cuboid_bone_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "外侧楔骨",
+    "髌骨",
+    "内侧楔骨",
+    "骰骨"
+   ],
+   "answer": 3,
+   "hint": "跗骨外侧者。",
+   "explain": "骰骨：跗骨外侧者。后接跟骨、前接第 4、5 跖骨；下面有腓骨长肌腱沟。"
+  },
+  {
+   "id": "mi_medial_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "medial_cuneiform",
+   "img": "bones/lower/medial_cuneiform_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "髋骨",
+    "距骨",
+    "外侧楔骨",
+    "内侧楔骨"
+   ],
+   "answer": 3,
+   "hint": "三块楔骨中最大者。",
+   "explain": "内侧楔骨：三块楔骨中最大者。前接第 1 跖骨；与足舟骨、中间楔骨相邻。"
+  },
+  {
+   "id": "mi_intermediate_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "intermediate_cuneiform",
+   "img": "bones/lower/intermediate_cuneiform_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "内侧楔骨",
+    "腓骨",
+    "中间楔骨",
+    "股骨"
+   ],
+   "answer": 2,
+   "hint": "三块楔骨中最小者。",
+   "explain": "中间楔骨：三块楔骨中最小者。前接第 2 跖骨；嵌于内、外侧楔骨之间。"
+  },
+  {
+   "id": "mi_lateral_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "lateral_cuneiform",
+   "img": "bones/lower/lateral_cuneiform_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "外侧楔骨",
+    "足舟骨",
+    "距骨",
+    "中间楔骨"
+   ],
+   "answer": 0,
+   "hint": "居中间楔骨与骰骨之间。",
+   "explain": "外侧楔骨：居中间楔骨与骰骨之间。前接第 3 跖骨；参与足横弓构成。"
+  },
+  {
+   "id": "mi_metatarsal",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "metatarsal",
+   "img": "bones/lower/metatarsal_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "足舟骨",
+    "髋骨",
+    "胫骨",
+    "跖骨 · 第3"
+   ],
+   "answer": 3,
+   "hint": "跖骨共 5 块，第 3 跖骨为代表。",
+   "explain": "跖骨 · 第3：跖骨共 5 块，第 3 跖骨为代表。底接跗骨、头接趾骨；第 1 跖骨粗大、承重多；第 5 跖骨底粗隆易撕脱骨折。"
+  },
+  {
+   "id": "mi_proximal_phalanx_of_toe",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "bone": "proximal_phalanx_of_toe",
+   "img": "bones/lower/proximal_phalanx_of_toe_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "外侧楔骨",
+    "足舟骨",
+    "趾骨 · 近节",
+    "腓骨"
+   ],
+   "answer": 2,
+   "hint": "趾骨每足 14 块：拇趾 2 节，余趾 3 节。",
+   "explain": "趾骨 · 近节：趾骨每足 14 块：拇趾 2 节，余趾 3 节。近节底接跖骨头；较指骨短小；拇趾末节承托蹬地力。"
+  },
+  {
+   "id": "mi_coccyx",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "bone": "coccyx",
+   "img": "bones/trunk/coccyx_front.webp",
+   "stem": "图中所示的骨是？",
+   "options": [
+    "胸骨",
+    "腰椎 · L3",
+    "骶骨",
+    "尾骨"
+   ],
+   "answer": 3,
+   "hint": "3–4 块退化尾椎融合的小三角骨。",
+   "explain": "尾骨：3–4 块退化尾椎融合的小三角骨。上接骶骨尖；为盆底肌与韧带附着点；跌倒时易挫伤。"
+  },
+  {
+   "id": "mt_frontal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "frontal_bone",
+   "stem": "下列哪项是额骨的特征？",
+   "options": [
+    "鳞部构成额部轮廓",
+    "下外侧接上颌骨额突",
+    "增大鼻腔黏膜面积",
+    "借额突、上颌突、颞突三向连接"
+   ],
+   "answer": 0,
+   "hint": "构成前额与眶上壁的单块扁骨，内含额窦。",
+   "explain": "额骨：构成前额与眶上壁的单块扁骨，内含额窦。鳞部构成额部轮廓；眶部构成眶顶；鼻部与筛骨、鼻骨相接。"
+  },
+  {
+   "id": "mt_parietal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "parietal_bone",
+   "stem": "下列哪项不属于顶骨的特征？",
+   "options": [
+    "视神经管、眶上裂等孔裂通行神经血管",
+    "矢状缝接对侧顶骨",
+    "参与眶底、鼻腔外侧壁与硬腭",
+    "上、下项线供颈肌附着"
+   ],
+   "answer": 0,
+   "hint": "成对扁骨，构成颅顶两侧壁。",
+   "explain": "顶骨：成对扁骨，构成颅顶两侧壁。冠状缝接额骨；矢状缝接对侧顶骨；人字缝接枕骨。"
+  },
+  {
+   "id": "mt_temporal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "temporal_bone",
+   "stem": "下列哪项是颞骨的特征？",
+   "options": [
+    "下接上颌骨与腭骨的腭突",
+    "为独立骨，非筛骨一部分",
+    "冠状缝接额骨",
+    "下颌窝与下颌骨髁突构成颞下颌关节"
+   ],
+   "answer": 3,
+   "hint": "成对，位于颅侧壁下部并参与颅底构成。",
+   "explain": "颞骨：成对，位于颅侧壁下部并参与颅底构成。分鳞部、鼓部、岩部；岩部内藏位听器；下颌窝与下颌骨髁突构成颞下颌关节。"
+  },
+  {
+   "id": "mt_occipital_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "occipital_bone",
+   "stem": "下列哪项不属于枕骨的特征？",
+   "options": [
+    "岩部内藏位听器",
+    "枕骨大孔通椎管",
+    "增大鼻腔黏膜面积",
+    "牙槽突容纳上牙"
+   ],
+   "answer": 0,
+   "hint": "单块，位于颅的后下壁。",
+   "explain": "枕骨：单块，位于颅的后下壁。枕骨大孔通椎管；枕髁与寰椎相关节；上、下项线供颈肌附着。"
+  },
+  {
+   "id": "mt_sphenoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "sphenoid_bone",
+   "stem": "下列哪项是蝶骨的特征？",
+   "options": [
+    "垂体窝容纳垂体",
+    "泪囊向下通鼻泪管",
+    "鼻部与筛骨、鼻骨相接",
+    "下方为下鼻道"
+   ],
+   "answer": 0,
+   "hint": "单块，居颅底中央，形似蝴蝶。",
+   "explain": "蝶骨：单块，居颅底中央，形似蝴蝶。分体、大翼、小翼、翼突；垂体窝容纳垂体；视神经管、眶上裂等孔裂通行神经血管。"
+  },
+  {
+   "id": "mt_ethmoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "ethmoid_bone",
+   "stem": "下列哪项不属于筛骨的特征？",
+   "options": [
+    "鳞部构成额部轮廓",
+    "冠状缝接额骨",
+    "不与任何骨直接相关节",
+    "垂直板参与鼻中隔"
+   ],
+   "answer": 0,
+   "hint": "单块，介于鼻腔顶与眶内侧壁之间。",
+   "explain": "筛骨：单块，介于鼻腔顶与眶内侧壁之间。筛板构成颅前窝底；筛窦开口于鼻腔；垂直板参与鼻中隔。"
+  },
+  {
+   "id": "mt_mandible",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "mandible",
+   "stem": "下列哪项是下颌骨的特征？",
+   "options": [
+    "枕髁与寰椎相关节",
+    "借额突、上颌突、颞突三向连接",
+    "分一体两支",
+    "矢状缝接对侧顶骨"
+   ],
+   "answer": 2,
+   "hint": "面颅中唯一能活动的骨，呈马蹄铁形。",
+   "explain": "下颌骨：面颅中唯一能活动的骨，呈马蹄铁形。分一体两支；髁突参与颞下颌关节；牙槽突容纳下牙。"
+  },
+  {
+   "id": "mt_maxilla",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "maxilla",
+   "stem": "下列哪项不属于上颌骨的特征？",
+   "options": [
+    "牙槽突容纳上牙",
+    "为吞咽与发音肌的附着点",
+    "鼻部与筛骨、鼻骨相接",
+    "人字缝接枕骨"
+   ],
+   "answer": 1,
+   "hint": "成对，构成面中部支架。",
+   "explain": "上颌骨：成对，构成面中部支架。内含上颌窦；牙槽突容纳上牙；参与眶底、鼻腔外侧壁与硬腭。"
+  },
+  {
+   "id": "mt_zygomatic_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "zygomatic_bone",
+   "stem": "下列哪项是颧骨的特征？",
+   "options": [
+    "分体、大翼、小翼、翼突",
+    "与颞骨颧突构成颧弓",
+    "内含上颌窦",
+    "冠状缝接额骨"
+   ],
+   "answer": 1,
+   "hint": "成对，构成面颊隆起与眶外下壁。",
+   "explain": "颧骨：成对，构成面颊隆起与眶外下壁。与颞骨颧突构成颧弓；借额突、上颌突、颞突三向连接。"
+  },
+  {
+   "id": "mt_nasal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "nasal_bone",
+   "stem": "下列哪项不属于鼻骨的特征？",
+   "options": [
+    "垂体窝容纳垂体",
+    "借肌和韧带悬于颞骨茎突",
+    "上接额骨鼻部",
+    "牙槽突容纳上牙"
+   ],
+   "answer": 0,
+   "hint": "成对小骨，构成鼻背支架。",
+   "explain": "鼻骨：成对小骨，构成鼻背支架。上接额骨鼻部；下外侧接上颌骨额突；面部外伤时易骨折。"
+  },
+  {
+   "id": "mt_lacrimal_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "lacrimal_bone",
+   "stem": "下列哪项是泪骨的特征？",
+   "options": [
+    "与上颌骨额突围成泪囊窝",
+    "视神经管、眶上裂等孔裂通行神经血管",
+    "为吞咽与发音肌的附着点",
+    "下接上颌骨与腭骨的腭突"
+   ],
+   "answer": 0,
+   "hint": "成对，眶内侧壁最前部的小薄骨。",
+   "explain": "泪骨：成对，眶内侧壁最前部的小薄骨。与上颌骨额突围成泪囊窝；泪囊向下通鼻泪管。"
+  },
+  {
+   "id": "mt_palatine_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "palatine_bone",
+   "stem": "下列哪项不属于腭骨的特征？",
+   "options": [
+    "冠状缝接额骨",
+    "为独立骨，非筛骨一部分",
+    "枕骨大孔通椎管",
+    "垂直板参与鼻腔外侧壁"
+   ],
+   "answer": 0,
+   "hint": "成对 L 形小骨，位于鼻腔后部。",
+   "explain": "腭骨：成对 L 形小骨，位于鼻腔后部。水平板构成硬腭后 1/3；垂直板参与鼻腔外侧壁。"
+  },
+  {
+   "id": "mt_inferior_nasal_concha",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "inferior_nasal_concha",
+   "stem": "下列哪项是下鼻甲的特征？",
+   "options": [
+    "眶部构成眶顶",
+    "为独立骨，非筛骨一部分",
+    "垂体窝容纳垂体",
+    "泪囊向下通鼻泪管"
+   ],
+   "answer": 1,
+   "hint": "成对卷曲薄骨，附于鼻腔外侧壁。",
+   "explain": "下鼻甲：成对卷曲薄骨，附于鼻腔外侧壁。为独立骨，非筛骨一部分；增大鼻腔黏膜面积；下方为下鼻道。"
+  },
+  {
+   "id": "mt_vomer",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "vomer",
+   "stem": "下列哪项不属于犁骨的特征？",
+   "options": [
+    "下颌窝与下颌骨髁突构成颞下颌关节",
+    "上、下项线供颈肌附着",
+    "下接上颌骨与腭骨的腭突",
+    "参与眶底、鼻腔外侧壁与硬腭"
+   ],
+   "answer": 0,
+   "hint": "单块薄骨，构成鼻中隔后下部。",
+   "explain": "犁骨：单块薄骨，构成鼻中隔后下部。上接筛骨垂直板；下接上颌骨与腭骨的腭突。"
+  },
+  {
+   "id": "mt_hyoid_bone",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "hyoid_bone",
+   "stem": "下列哪项是舌骨的特征？",
+   "options": [
+    "鳞部构成额部轮廓",
+    "冠状缝接额骨",
+    "分一体两支",
+    "为吞咽与发音肌的附着点"
+   ],
+   "answer": 3,
+   "hint": "单块 U 形小骨，悬于颈部皮下。",
+   "explain": "舌骨：单块 U 形小骨，悬于颈部皮下。不与任何骨直接相关节；借肌和韧带悬于颞骨茎突；为吞咽与发音肌的附着点。"
+  },
+  {
+   "id": "mt_atlas",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "atlas",
+   "stem": "下列哪项不属于寰椎 · C1的特征？",
+   "options": [
+    "为盆底肌与韧带附着点",
+    "8–10 假肋连于上位肋软骨",
+    "椎体小、椎孔大",
+    "侧块上关节凹接枕髁"
+   ],
+   "answer": 0,
+   "hint": "第 1 颈椎，无椎体与棘突，呈环形。",
+   "explain": "寰椎 · C1：第 1 颈椎，无椎体与棘突，呈环形。侧块上关节凹接枕髁；前弓后面有齿突凹；与枢椎共司点头与旋转。"
+  },
+  {
+   "id": "mt_axis",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "axis",
+   "stem": "下列哪项是枢椎 · C2的特征？",
+   "options": [
+    "跌倒时易挫伤",
+    "耳状面与髋骨构成骶髂关节",
+    "与枢椎共司点头与旋转",
+    "寰枢关节司摇头"
+   ],
+   "answer": 3,
+   "hint": "第 2 颈椎，椎体向上伸出齿突。",
+   "explain": "枢椎 · C2：第 2 颈椎，椎体向上伸出齿突。齿突作旋转轴；寰枢关节司摇头；棘突粗大、末端分叉。"
+  },
+  {
+   "id": "mt_cervical_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "cervical_vertebra",
+   "stem": "下列哪项不属于颈椎 · C7的特征？",
+   "options": [
+    "C7 棘突为计数椎骨的标志",
+    "齿突作旋转轴",
+    "椎孔呈三角形",
+    "1–7 真肋借肋软骨直连胸骨"
+   ],
+   "answer": 1,
+   "hint": "颈椎共 7 块；C7 棘突特长，称隆椎。",
+   "explain": "颈椎 · C7：颈椎共 7 块；C7 棘突特长，称隆椎。横突孔通椎动脉；椎体小、椎孔大；C7 棘突为计数椎骨的标志。"
+  },
+  {
+   "id": "mt_thoracic_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "thoracic_vertebra",
+   "stem": "下列哪项是胸椎 · T5的特征？",
+   "options": [
+    "寰枢关节司摇头",
+    "胸骨角平对第 2 肋",
+    "前弓后面有齿突凹",
+    "椎体两侧有肋凹"
+   ],
+   "answer": 3,
+   "hint": "胸椎共 12 块，与肋相关节。",
+   "explain": "胸椎 · T5：胸椎共 12 块，与肋相关节。椎体两侧有肋凹；横突末端有横突肋凹；棘突长，叠瓦状斜向下。"
+  },
+  {
+   "id": "mt_lumbar_vertebra",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "lumbar_vertebra",
+   "stem": "下列哪项不属于腰椎 · L3的特征？",
+   "options": [
+    "棘突宽短呈板状、水平后伸",
+    "棘突长，叠瓦状斜向下",
+    "11–12 浮肋前端游离",
+    "C7 棘突为计数椎骨的标志"
+   ],
+   "answer": 1,
+   "hint": "腰椎共 5 块，椎体粗壮、承重大。",
+   "explain": "腰椎 · L3：腰椎共 5 块，椎体粗壮、承重大。椎孔呈三角形；棘突宽短呈板状、水平后伸；关节突关节面近矢状位。"
+  },
+  {
+   "id": "mt_sacrum",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "sacrum",
+   "stem": "下列哪项是骶骨的特征？",
+   "options": [
+    "椎体两侧有肋凹",
+    "横突孔通椎动脉",
+    "耳状面与髋骨构成骶髂关节",
+    "分柄、体、剑突三部"
+   ],
+   "answer": 2,
+   "hint": "5 块骶椎融合成的三角形骨。",
+   "explain": "骶骨：5 块骶椎融合成的三角形骨。底前缘的岬为产科标志；骶前、后孔通骶神经；耳状面与髋骨构成骶髂关节。"
+  },
+  {
+   "id": "mt_rib",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "rib",
+   "stem": "下列哪项不属于肋骨 · 第7肋的特征？",
+   "options": [
+    "骶前、后孔通骶神经",
+    "棘突宽短呈板状、水平后伸",
+    "椎体小、椎孔大",
+    "1–7 真肋借肋软骨直连胸骨"
+   ],
+   "answer": 0,
+   "hint": "肋共 12 对；第 7 肋为真肋代表。",
+   "explain": "肋骨 · 第7肋：肋共 12 对；第 7 肋为真肋代表。1–7 真肋借肋软骨直连胸骨；8–10 假肋连于上位肋软骨；11–12 浮肋前端游离。"
+  },
+  {
+   "id": "mt_sternum",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "sternum",
+   "stem": "下列哪项是胸骨的特征？",
+   "options": [
+    "胸骨角平对第 2 肋",
+    "棘突粗大、末端分叉",
+    "关节突关节面近矢状位",
+    "C7 棘突为计数椎骨的标志"
+   ],
+   "answer": 0,
+   "hint": "位于胸前壁正中的扁骨。",
+   "explain": "胸骨：位于胸前壁正中的扁骨。分柄、体、剑突三部；胸骨角平对第 2 肋；两侧接肋切迹。"
+  },
+  {
+   "id": "mt_clavicle",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "clavicle",
+   "stem": "下列哪项不属于锁骨的特征？",
+   "options": [
+    "掌侧钩突构成腕管尺侧壁",
+    "腰部血供差，骨折易不愈合",
+    "头接月骨",
+    "中、外 1/3 交界处易骨折"
+   ],
+   "answer": 0,
+   "hint": "S 形长骨，横架于胸廓前上方。",
+   "explain": "锁骨：S 形长骨，横架于胸廓前上方。内端接胸骨、外端接肩峰；上肢与躯干间唯一的骨性支架；中、外 1/3 交界处易骨折。"
+  },
+  {
+   "id": "mt_scapula",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "scapula",
+   "stem": "下列哪项是肩胛骨的特征？",
+   "options": [
+    "关节盂接肱骨头",
+    "上肢与躯干间唯一的骨性支架",
+    "为腕尺侧的皮下标志",
+    "第 1 掌骨短粗、司拇指"
+   ],
+   "answer": 0,
+   "hint": "三角形扁骨，贴于胸廓后外侧面。",
+   "explain": "肩胛骨：三角形扁骨，贴于胸廓后外侧面。关节盂接肱骨头；肩峰为肩部最高点；喙突供肌与韧带附着。"
+  },
+  {
+   "id": "mt_humerus",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "humerus",
+   "stem": "下列哪项不属于肱骨的特征？",
+   "options": [
+    "掌侧面接豌豆骨",
+    "下端细小，头接桡骨",
+    "与尺骨构成桡尺近、远侧关节，司旋前旋后",
+    "大、小结节供肩袖肌附着"
+   ],
+   "answer": 0,
+   "hint": "上臂的长骨。",
+   "explain": "肱骨：上臂的长骨。肱骨头接关节盂；大、小结节供肩袖肌附着；下端滑车与肱骨小头接前臂骨。"
+  },
+  {
+   "id": "mt_radius",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "radius",
+   "stem": "下列哪项是桡骨的特征？",
+   "options": [
+    "近节底接掌骨头",
+    "接第 4、5 掌骨",
+    "与尺骨构成桡尺近、远侧关节，司旋前旋后",
+    "司拇指对掌的灵活运动"
+   ],
+   "answer": 2,
+   "hint": "前臂外侧（拇指侧）的长骨。",
+   "explain": "桡骨：前臂外侧（拇指侧）的长骨。桡骨头接肱骨小头；下端粗大、接腕骨；与尺骨构成桡尺近、远侧关节，司旋前旋后。"
+  },
+  {
+   "id": "mt_ulna",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "ulna",
+   "stem": "下列哪项不属于尺骨的特征？",
+   "options": [
+    "肩峰为肩部最高点",
+    "上肢与躯干间唯一的骨性支架",
+    "与桡骨下端相关节",
+    "滑车切迹抱肱骨滑车"
+   ],
+   "answer": 0,
+   "hint": "前臂内侧（小指侧）的长骨。",
+   "explain": "尺骨：前臂内侧（小指侧）的长骨。滑车切迹抱肱骨滑车；鹰嘴为肘后皮下标志；下端细小，头接桡骨。"
+  },
+  {
+   "id": "mt_scaphoid",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "scaphoid",
+   "stem": "下列哪项是手舟骨的特征？",
+   "options": [
+    "第 3 掌骨底背面有茎突",
+    "腰部血供差，骨折易不愈合",
+    "中、外 1/3 交界处易骨折",
+    "司拇指对掌的灵活运动"
+   ],
+   "answer": 1,
+   "hint": "近侧列腕骨外侧者，形似小船。",
+   "explain": "手舟骨：近侧列腕骨外侧者，形似小船。腰部血供差，骨折易不愈合；鼻烟窝压痛为骨折常见体征。"
+  },
+  {
+   "id": "mt_lunate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "lunate",
+   "stem": "下列哪项不属于月状骨的特征？",
+   "options": [
+    "脱位可压迫正中神经",
+    "滑车切迹抱肱骨滑车",
+    "接第 2 掌骨底",
+    "肱骨头接关节盂"
+   ],
+   "answer": 1,
+   "hint": "近侧列腕骨中央者，呈半月形。",
+   "explain": "月状骨：近侧列腕骨中央者，呈半月形。与桡骨下端相关节；脱位可压迫正中神经。"
+  },
+  {
+   "id": "mt_triquetral",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "triquetral",
+   "stem": "下列哪项是三角骨的特征？",
+   "options": [
+    "与大多角骨、头状骨相邻",
+    "掌侧面接豌豆骨",
+    "下端粗大、接腕骨",
+    "大、小结节供肩袖肌附着"
+   ],
+   "answer": 1,
+   "hint": "近侧列腕骨内侧者。",
+   "explain": "三角骨：近侧列腕骨内侧者。掌侧面接豌豆骨；参与腕尺侧稳定。"
+  },
+  {
+   "id": "mt_pisiform",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "pisiform",
+   "stem": "下列哪项不属于豌豆骨的特征？",
+   "options": [
+    "为腕尺侧的皮下标志",
+    "喙突供肌与韧带附着",
+    "掌侧钩突构成腕管尺侧壁",
+    "中、外 1/3 交界处易骨折"
+   ],
+   "answer": 1,
+   "hint": "籽骨样小骨，位于三角骨掌侧。",
+   "explain": "豌豆骨：籽骨样小骨，位于三角骨掌侧。包于尺侧腕屈肌腱内；为腕尺侧的皮下标志。"
+  },
+  {
+   "id": "mt_trapezium",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "trapezium",
+   "stem": "下列哪项是大多角骨的特征？",
+   "options": [
+    "鼻烟窝压痛为骨折常见体征",
+    "肱骨头接关节盂",
+    "内端接胸骨、外端接肩峰",
+    "鞍状关节面接第 1 掌骨"
+   ],
+   "answer": 3,
+   "hint": "远侧列腕骨外侧者。",
+   "explain": "大多角骨：远侧列腕骨外侧者。鞍状关节面接第 1 掌骨；司拇指对掌的灵活运动。"
+  },
+  {
+   "id": "mt_trapezoid",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "trapezoid",
+   "stem": "下列哪项不属于小多角骨的特征？",
+   "options": [
+    "掌侧钩突构成腕管尺侧壁",
+    "大、小结节供肩袖肌附着",
+    "与大多角骨、头状骨相邻",
+    "包于尺侧腕屈肌腱内"
+   ],
+   "answer": 0,
+   "hint": "远侧列腕骨中最小者。",
+   "explain": "小多角骨：远侧列腕骨中最小者。接第 2 掌骨底；与大多角骨、头状骨相邻。"
+  },
+  {
+   "id": "mt_capitate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "capitate",
+   "stem": "下列哪项是头状骨的特征？",
+   "options": [
+    "与尺骨构成桡尺近、远侧关节，司旋前旋后",
+    "接第 4、5 掌骨",
+    "脱位可压迫正中神经",
+    "底接第 3 掌骨"
+   ],
+   "answer": 3,
+   "hint": "腕骨中最大者，居中央。",
+   "explain": "头状骨：腕骨中最大者，居中央。头接月骨；底接第 3 掌骨；为腕骨排列的中心标志。"
+  },
+  {
+   "id": "mt_hamate",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "hamate",
+   "stem": "下列哪项不属于钩骨的特征？",
+   "options": [
+    "包于尺侧腕屈肌腱内",
+    "接第 4、5 掌骨",
+    "掌侧面接豌豆骨",
+    "桡骨头接肱骨小头"
+   ],
+   "answer": 0,
+   "hint": "远侧列腕骨内侧者。",
+   "explain": "钩骨：远侧列腕骨内侧者。掌侧钩突构成腕管尺侧壁；接第 4、5 掌骨。"
+  },
+  {
+   "id": "mt_metacarpal",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "metacarpal",
+   "stem": "下列哪项是掌骨 · 第3的特征？",
+   "options": [
+    "底接腕骨、头接指骨",
+    "接第 4、5 掌骨",
+    "大、小结节供肩袖肌附着",
+    "鼻烟窝压痛为骨折常见体征"
+   ],
+   "answer": 0,
+   "hint": "掌骨共 5 块，第 3 掌骨为代表。",
+   "explain": "掌骨 · 第3：掌骨共 5 块，第 3 掌骨为代表。底接腕骨、头接指骨；第 1 掌骨短粗、司拇指；第 3 掌骨底背面有茎突。"
+  },
+  {
+   "id": "mt_proximal_phalanx_of_finger",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "proximal_phalanx_of_finger",
+   "stem": "下列哪项不属于指骨 · 近节的特征？",
+   "options": [
+    "中、外 1/3 交界处易骨折",
+    "下端细小，头接桡骨",
+    "滑车与中节相关节",
+    "为腕骨排列的中心标志"
+   ],
+   "answer": 0,
+   "hint": "指骨每手 14 块：拇指 2 节，余指 3 节。",
+   "explain": "指骨 · 近节：指骨每手 14 块：拇指 2 节，余指 3 节。近节底接掌骨头；滑车与中节相关节；骨折后影响握拳功能。"
+  },
+  {
+   "id": "mt_hip_bone",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "hip_bone",
+   "stem": "下列哪项是髋骨的特征？",
+   "options": [
+    "与足舟骨、中间楔骨相邻",
+    "滑车接胫、腓骨下端",
+    "两侧髋骨与骶尾骨围成骨盆",
+    "股骨头接髋臼"
+   ],
+   "answer": 2,
+   "hint": "髂、坐、耻三骨融合成的不规则骨。",
+   "explain": "髋骨：髂、坐、耻三骨融合成的不规则骨。三骨会于髋臼、接股骨头；耳状面接骶骨；两侧髋骨与骶尾骨围成骨盆。"
+  },
+  {
+   "id": "mt_femur",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "femur",
+   "stem": "下列哪项不属于股骨的特征？",
+   "options": [
+    "下端外踝构成踝穴外壁",
+    "前接第 1 跖骨",
+    "股骨头接髋臼",
+    "内侧面舟骨粗隆为体表标志"
+   ],
+   "answer": 0,
+   "hint": "人体最长、最粗的长骨。",
+   "explain": "股骨：人体最长、最粗的长骨。股骨头接髋臼；颈干角约 125°；大转子为体表标志；下端内、外侧髁接胫骨。"
+  },
+  {
+   "id": "mt_patella",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "patella",
+   "stem": "下列哪项是髌骨的特征？",
+   "options": [
+    "后面关节面接股骨髌面",
+    "参与足横弓构成",
+    "拇趾末节承托蹬地力",
+    "无肌附着、血供较差"
+   ],
+   "answer": 0,
+   "hint": "人体最大的籽骨，包于股四头肌腱内。",
+   "explain": "髌骨：人体最大的籽骨，包于股四头肌腱内。后面关节面接股骨髌面；保护膝关节并增大股四头肌力臂。"
+  },
+  {
+   "id": "mt_tibia",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "tibia",
+   "stem": "下列哪项不属于胫骨的特征？",
+   "options": [
+    "底接跗骨、头接趾骨",
+    "前接第 1 跖骨",
+    "下端内踝为踝部标志",
+    "后面关节面接股骨髌面"
+   ],
+   "answer": 0,
+   "hint": "小腿内侧粗大的承重骨。",
+   "explain": "胫骨：小腿内侧粗大的承重骨。上端内、外侧髁接股骨；胫骨粗隆接髌韧带；下端内踝为踝部标志。"
+  },
+  {
+   "id": "mt_fibula",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "fibula",
+   "stem": "下列哪项是腓骨的特征？",
+   "options": [
+    "头接足舟骨",
+    "较指骨短小",
+    "上面接距骨",
+    "腓骨头接胫骨外侧髁"
+   ],
+   "answer": 3,
+   "hint": "小腿外侧的细长骨，不直接承重。",
+   "explain": "腓骨：小腿外侧的细长骨，不直接承重。腓骨头接胫骨外侧髁；下端外踝构成踝穴外壁；供小腿肌附着。"
+  },
+  {
+   "id": "mt_talus",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "talus",
+   "stem": "下列哪项不属于距骨的特征？",
+   "options": [
+    "供小腿肌附着",
+    "内侧面舟骨粗隆为体表标志",
+    "两侧髋骨与骶尾骨围成骨盆",
+    "头接足舟骨"
+   ],
+   "answer": 0,
+   "hint": "跗骨最上方者，承接小腿重量。",
+   "explain": "距骨：跗骨最上方者，承接小腿重量。滑车接胫、腓骨下端；头接足舟骨；无肌附着、血供较差。"
+  },
+  {
+   "id": "mt_calcaneus",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "calcaneus",
+   "stem": "下列哪项是跟骨的特征？",
+   "options": [
+    "滑车接胫、腓骨下端",
+    "前接三块楔骨",
+    "载距突承托距骨颈",
+    "参与足横弓构成"
+   ],
+   "answer": 2,
+   "hint": "最大的跗骨，构成足跟。",
+   "explain": "跟骨：最大的跗骨，构成足跟。跟结节接跟腱；上面接距骨；载距突承托距骨颈。"
+  },
+  {
+   "id": "mt_navicular_bone_of_foot",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "navicular_bone_of_foot",
+   "stem": "下列哪项不属于足舟骨的特征？",
+   "options": [
+    "后面关节面接股骨髌面",
+    "颈干角约 125°",
+    "前接三块楔骨",
+    "前接第 2 跖骨"
+   ],
+   "answer": 0,
+   "hint": "跗骨内侧者，位于距骨头前方。",
+   "explain": "足舟骨：跗骨内侧者，位于距骨头前方。内侧面舟骨粗隆为体表标志；前接三块楔骨。"
+  },
+  {
+   "id": "mt_cuboid_bone",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "cuboid_bone",
+   "stem": "下列哪项是骰骨的特征？",
+   "options": [
+    "下端内踝为踝部标志",
+    "后接跟骨、前接第 4、5 跖骨",
+    "与足舟骨、中间楔骨相邻",
+    "参与足横弓构成"
+   ],
+   "answer": 1,
+   "hint": "跗骨外侧者。",
+   "explain": "骰骨：跗骨外侧者。后接跟骨、前接第 4、5 跖骨；下面有腓骨长肌腱沟。"
+  },
+  {
+   "id": "mt_medial_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "medial_cuneiform",
+   "stem": "下列哪项不属于内侧楔骨的特征？",
+   "options": [
+    "与足舟骨、中间楔骨相邻",
+    "滑车接胫、腓骨下端",
+    "后接跟骨、前接第 4、5 跖骨",
+    "跟结节接跟腱"
+   ],
+   "answer": 1,
+   "hint": "三块楔骨中最大者。",
+   "explain": "内侧楔骨：三块楔骨中最大者。前接第 1 跖骨；与足舟骨、中间楔骨相邻。"
+  },
+  {
+   "id": "mt_intermediate_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "intermediate_cuneiform",
+   "stem": "下列哪项是中间楔骨的特征？",
+   "options": [
+    "胫骨粗隆接髌韧带",
+    "较指骨短小",
+    "第 1 跖骨粗大、承重多",
+    "前接第 2 跖骨"
+   ],
+   "answer": 3,
+   "hint": "三块楔骨中最小者。",
+   "explain": "中间楔骨：三块楔骨中最小者。前接第 2 跖骨；嵌于内、外侧楔骨之间。"
+  },
+  {
+   "id": "mt_lateral_cuneiform",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "lateral_cuneiform",
+   "stem": "下列哪项不属于外侧楔骨的特征？",
+   "options": [
+    "载距突承托距骨颈",
+    "参与足横弓构成",
+    "内侧面舟骨粗隆为体表标志",
+    "后接跟骨、前接第 4、5 跖骨"
+   ],
+   "answer": 0,
+   "hint": "居中间楔骨与骰骨之间。",
+   "explain": "外侧楔骨：居中间楔骨与骰骨之间。前接第 3 跖骨；参与足横弓构成。"
+  },
+  {
+   "id": "mt_metatarsal",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "metatarsal",
+   "stem": "下列哪项是跖骨 · 第3的特征？",
+   "options": [
+    "第 5 跖骨底粗隆易撕脱骨折",
+    "参与足横弓构成",
+    "与足舟骨、中间楔骨相邻",
+    "嵌于内、外侧楔骨之间"
+   ],
+   "answer": 0,
+   "hint": "跖骨共 5 块，第 3 跖骨为代表。",
+   "explain": "跖骨 · 第3：跖骨共 5 块，第 3 跖骨为代表。底接跗骨、头接趾骨；第 1 跖骨粗大、承重多；第 5 跖骨底粗隆易撕脱骨折。"
+  },
+  {
+   "id": "mt_proximal_phalanx_of_toe",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "proximal_phalanx_of_toe",
+   "stem": "下列哪项不属于趾骨 · 近节的特征？",
+   "options": [
+    "胫骨粗隆接髌韧带",
+    "近节底接跖骨头",
+    "上面接距骨",
+    "前接第 1 跖骨"
+   ],
+   "answer": 0,
+   "hint": "趾骨每足 14 块：拇趾 2 节，余趾 3 节。",
+   "explain": "趾骨 · 近节：趾骨每足 14 块：拇趾 2 节，余趾 3 节。近节底接跖骨头；较指骨短小；拇趾末节承托蹬地力。"
+  },
+  {
+   "id": "mt_coccyx",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "coccyx",
+   "stem": "下列哪项是尾骨的特征？",
+   "options": [
+    "C7 棘突为计数椎骨的标志",
+    "为盆底肌与韧带附着点",
+    "关节突关节面近矢状位",
+    "与枢椎共司点头与旋转"
+   ],
+   "answer": 1,
+   "hint": "3–4 块退化尾椎融合的小三角骨。",
+   "explain": "尾骨：3–4 块退化尾椎融合的小三角骨。上接骶骨尖；为盆底肌与韧带附着点；跌倒时易挫伤。"
+  },
+  {
+   "id": "tf_frontal_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "frontal_bone",
+   "statement": "「鳞部构成额部轮廓」描述的是额骨。",
+   "answer": true,
+   "hint": "构成前额与眶上壁的单块扁骨，内含额窦。",
+   "explain": "额骨：构成前额与眶上壁的单块扁骨，内含额窦。鳞部构成额部轮廓；眶部构成眶顶；鼻部与筛骨、鼻骨相接。"
+  },
+  {
+   "id": "tf_parietal_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "parietal_bone",
+   "statement": "「面部外伤时易骨折」描述的是顶骨。",
+   "answer": false,
+   "hint": "成对扁骨，构成颅顶两侧壁。",
+   "explain": "该特征属于鼻骨（成对小骨，构成鼻背支架。）。顶骨的特征是：冠状缝接额骨；矢状缝接对侧顶骨；人字缝接枕骨。"
+  },
+  {
+   "id": "tf_temporal_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "temporal_bone",
+   "statement": "「下颌窝与下颌骨髁突构成颞下颌关节」描述的是颞骨。",
+   "answer": true,
+   "hint": "成对，位于颅侧壁下部并参与颅底构成。",
+   "explain": "颞骨：成对，位于颅侧壁下部并参与颅底构成。分鳞部、鼓部、岩部；岩部内藏位听器；下颌窝与下颌骨髁突构成颞下颌关节。"
+  },
+  {
+   "id": "tf_occipital_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "occipital_bone",
+   "statement": "「水平板构成硬腭后 1/3」描述的是枕骨。",
+   "answer": false,
+   "hint": "单块，位于颅的后下壁。",
+   "explain": "该特征属于腭骨（成对 L 形小骨，位于鼻腔后部。）。枕骨的特征是：枕骨大孔通椎管；枕髁与寰椎相关节；上、下项线供颈肌附着。"
+  },
+  {
+   "id": "tf_sphenoid_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "sphenoid_bone",
+   "statement": "「垂体窝容纳垂体」描述的是蝶骨。",
+   "answer": true,
+   "hint": "单块，居颅底中央，形似蝴蝶。",
+   "explain": "蝶骨：单块，居颅底中央，形似蝴蝶。分体、大翼、小翼、翼突；垂体窝容纳垂体；视神经管、眶上裂等孔裂通行神经血管。"
+  },
+  {
+   "id": "tf_ethmoid_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "ethmoid_bone",
+   "statement": "「分体、大翼、小翼、翼突」描述的是筛骨。",
+   "answer": false,
+   "hint": "单块，介于鼻腔顶与眶内侧壁之间。",
+   "explain": "该特征属于蝶骨（单块，居颅底中央，形似蝴蝶。）。筛骨的特征是：筛板构成颅前窝底；筛窦开口于鼻腔；垂直板参与鼻中隔。"
+  },
+  {
+   "id": "tf_mandible",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "mandible",
+   "statement": "「分一体两支」描述的是下颌骨。",
+   "answer": true,
+   "hint": "面颅中唯一能活动的骨，呈马蹄铁形。",
+   "explain": "下颌骨：面颅中唯一能活动的骨，呈马蹄铁形。分一体两支；髁突参与颞下颌关节；牙槽突容纳下牙。"
+  },
+  {
+   "id": "tf_maxilla",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "maxilla",
+   "statement": "「与上颌骨额突围成泪囊窝」描述的是上颌骨。",
+   "answer": false,
+   "hint": "成对，构成面中部支架。",
+   "explain": "该特征属于泪骨（成对，眶内侧壁最前部的小薄骨。）。上颌骨的特征是：内含上颌窦；牙槽突容纳上牙；参与眶底、鼻腔外侧壁与硬腭。"
+  },
+  {
+   "id": "tf_zygomatic_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "zygomatic_bone",
+   "statement": "「与颞骨颧突构成颧弓」描述的是颧骨。",
+   "answer": true,
+   "hint": "成对，构成面颊隆起与眶外下壁。",
+   "explain": "颧骨：成对，构成面颊隆起与眶外下壁。与颞骨颧突构成颧弓；借额突、上颌突、颞突三向连接。"
+  },
+  {
+   "id": "tf_nasal_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "nasal_bone",
+   "statement": "「眶部构成眶顶」描述的是鼻骨。",
+   "answer": false,
+   "hint": "成对小骨，构成鼻背支架。",
+   "explain": "该特征属于额骨（构成前额与眶上壁的单块扁骨，内含额窦。）。鼻骨的特征是：上接额骨鼻部；下外侧接上颌骨额突；面部外伤时易骨折。"
+  },
+  {
+   "id": "tf_lacrimal_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "lacrimal_bone",
+   "statement": "「与上颌骨额突围成泪囊窝」描述的是泪骨。",
+   "answer": true,
+   "hint": "成对，眶内侧壁最前部的小薄骨。",
+   "explain": "泪骨：成对，眶内侧壁最前部的小薄骨。与上颌骨额突围成泪囊窝；泪囊向下通鼻泪管。"
+  },
+  {
+   "id": "tf_palatine_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "palatine_bone",
+   "statement": "「与颞骨颧突构成颧弓」描述的是腭骨。",
+   "answer": false,
+   "hint": "成对 L 形小骨，位于鼻腔后部。",
+   "explain": "该特征属于颧骨（成对，构成面颊隆起与眶外下壁。）。腭骨的特征是：水平板构成硬腭后 1/3；垂直板参与鼻腔外侧壁。"
+  },
+  {
+   "id": "tf_inferior_nasal_concha",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "inferior_nasal_concha",
+   "statement": "「为独立骨，非筛骨一部分」描述的是下鼻甲。",
+   "answer": true,
+   "hint": "成对卷曲薄骨，附于鼻腔外侧壁。",
+   "explain": "下鼻甲：成对卷曲薄骨，附于鼻腔外侧壁。为独立骨，非筛骨一部分；增大鼻腔黏膜面积；下方为下鼻道。"
+  },
+  {
+   "id": "tf_vomer",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "vomer",
+   "statement": "「下方为下鼻道」描述的是犁骨。",
+   "answer": false,
+   "hint": "单块薄骨，构成鼻中隔后下部。",
+   "explain": "该特征属于下鼻甲（成对卷曲薄骨，附于鼻腔外侧壁。）。犁骨的特征是：上接筛骨垂直板；下接上颌骨与腭骨的腭突。"
+  },
+  {
+   "id": "tf_hyoid_bone",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": false,
+   "bone": "hyoid_bone",
+   "statement": "「为吞咽与发音肌的附着点」描述的是舌骨。",
+   "answer": true,
+   "hint": "单块 U 形小骨，悬于颈部皮下。",
+   "explain": "舌骨：单块 U 形小骨，悬于颈部皮下。不与任何骨直接相关节；借肌和韧带悬于颞骨茎突；为吞咽与发音肌的附着点。"
+  },
+  {
+   "id": "tf_atlas",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "atlas",
+   "statement": "「为盆底肌与韧带附着点」描述的是寰椎 · C1。",
+   "answer": false,
+   "hint": "第 1 颈椎，无椎体与棘突，呈环形。",
+   "explain": "该特征属于尾骨（3–4 块退化尾椎融合的小三角骨。）。寰椎 · C1的特征是：侧块上关节凹接枕髁；前弓后面有齿突凹；与枢椎共司点头与旋转。"
+  },
+  {
+   "id": "tf_axis",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "axis",
+   "statement": "「寰枢关节司摇头」描述的是枢椎 · C2。",
+   "answer": true,
+   "hint": "第 2 颈椎，椎体向上伸出齿突。",
+   "explain": "枢椎 · C2：第 2 颈椎，椎体向上伸出齿突。齿突作旋转轴；寰枢关节司摇头；棘突粗大、末端分叉。"
+  },
+  {
+   "id": "tf_cervical_vertebra",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "cervical_vertebra",
+   "statement": "「底前缘的岬为产科标志」描述的是颈椎 · C7。",
+   "answer": false,
+   "hint": "颈椎共 7 块；C7 棘突特长，称隆椎。",
+   "explain": "该特征属于骶骨（5 块骶椎融合成的三角形骨。）。颈椎 · C7的特征是：横突孔通椎动脉；椎体小、椎孔大；C7 棘突为计数椎骨的标志。"
+  },
+  {
+   "id": "tf_thoracic_vertebra",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "thoracic_vertebra",
+   "statement": "「椎体两侧有肋凹」描述的是胸椎 · T5。",
+   "answer": true,
+   "hint": "胸椎共 12 块，与肋相关节。",
+   "explain": "胸椎 · T5：胸椎共 12 块，与肋相关节。椎体两侧有肋凹；横突末端有横突肋凹；棘突长，叠瓦状斜向下。"
+  },
+  {
+   "id": "tf_lumbar_vertebra",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "lumbar_vertebra",
+   "statement": "「跌倒时易挫伤」描述的是腰椎 · L3。",
+   "answer": false,
+   "hint": "腰椎共 5 块，椎体粗壮、承重大。",
+   "explain": "该特征属于尾骨（3–4 块退化尾椎融合的小三角骨。）。腰椎 · L3的特征是：椎孔呈三角形；棘突宽短呈板状、水平后伸；关节突关节面近矢状位。"
+  },
+  {
+   "id": "tf_sacrum",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "sacrum",
+   "statement": "「耳状面与髋骨构成骶髂关节」描述的是骶骨。",
+   "answer": true,
+   "hint": "5 块骶椎融合成的三角形骨。",
+   "explain": "骶骨：5 块骶椎融合成的三角形骨。底前缘的岬为产科标志；骶前、后孔通骶神经；耳状面与髋骨构成骶髂关节。"
+  },
+  {
+   "id": "tf_rib",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "rib",
+   "statement": "「骶前、后孔通骶神经」描述的是肋骨 · 第7肋。",
+   "answer": false,
+   "hint": "肋共 12 对；第 7 肋为真肋代表。",
+   "explain": "该特征属于骶骨（5 块骶椎融合成的三角形骨。）。肋骨 · 第7肋的特征是：1–7 真肋借肋软骨直连胸骨；8–10 假肋连于上位肋软骨；11–12 浮肋前端游离。"
+  },
+  {
+   "id": "tf_sternum",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "sternum",
+   "statement": "「胸骨角平对第 2 肋」描述的是胸骨。",
+   "answer": true,
+   "hint": "位于胸前壁正中的扁骨。",
+   "explain": "胸骨：位于胸前壁正中的扁骨。分柄、体、剑突三部；胸骨角平对第 2 肋；两侧接肋切迹。"
+  },
+  {
+   "id": "tf_clavicle",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "clavicle",
+   "statement": "「腰部血供差，骨折易不愈合」描述的是锁骨。",
+   "answer": false,
+   "hint": "S 形长骨，横架于胸廓前上方。",
+   "explain": "该特征属于手舟骨（近侧列腕骨外侧者，形似小船。）。锁骨的特征是：内端接胸骨、外端接肩峰；上肢与躯干间唯一的骨性支架；中、外 1/3 交界处易骨折。"
+  },
+  {
+   "id": "tf_scapula",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "scapula",
+   "statement": "「关节盂接肱骨头」描述的是肩胛骨。",
+   "answer": true,
+   "hint": "三角形扁骨，贴于胸廓后外侧面。",
+   "explain": "肩胛骨：三角形扁骨，贴于胸廓后外侧面。关节盂接肱骨头；肩峰为肩部最高点；喙突供肌与韧带附着。"
+  },
+  {
+   "id": "tf_humerus",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "humerus",
+   "statement": "「骨折后影响握拳功能」描述的是肱骨。",
+   "answer": false,
+   "hint": "上臂的长骨。",
+   "explain": "该特征属于指骨 · 近节（指骨每手 14 块：拇指 2 节，余指 3 节。）。肱骨的特征是：肱骨头接关节盂；大、小结节供肩袖肌附着；下端滑车与肱骨小头接前臂骨。"
+  },
+  {
+   "id": "tf_radius",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "radius",
+   "statement": "「与尺骨构成桡尺近、远侧关节，司旋前旋后」描述的是桡骨。",
+   "answer": true,
+   "hint": "前臂外侧（拇指侧）的长骨。",
+   "explain": "桡骨：前臂外侧（拇指侧）的长骨。桡骨头接肱骨小头；下端粗大、接腕骨；与尺骨构成桡尺近、远侧关节，司旋前旋后。"
+  },
+  {
+   "id": "tf_ulna",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "ulna",
+   "statement": "「底接第 3 掌骨」描述的是尺骨。",
+   "answer": false,
+   "hint": "前臂内侧（小指侧）的长骨。",
+   "explain": "该特征属于头状骨（腕骨中最大者，居中央。）。尺骨的特征是：滑车切迹抱肱骨滑车；鹰嘴为肘后皮下标志；下端细小，头接桡骨。"
+  },
+  {
+   "id": "tf_scaphoid",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "scaphoid",
+   "statement": "「腰部血供差，骨折易不愈合」描述的是手舟骨。",
+   "answer": true,
+   "hint": "近侧列腕骨外侧者，形似小船。",
+   "explain": "手舟骨：近侧列腕骨外侧者，形似小船。腰部血供差，骨折易不愈合；鼻烟窝压痛为骨折常见体征。"
+  },
+  {
+   "id": "tf_lunate",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "lunate",
+   "statement": "「头接月骨」描述的是月状骨。",
+   "answer": false,
+   "hint": "近侧列腕骨中央者，呈半月形。",
+   "explain": "该特征属于头状骨（腕骨中最大者，居中央。）。月状骨的特征是：与桡骨下端相关节；脱位可压迫正中神经。"
+  },
+  {
+   "id": "tf_triquetral",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "triquetral",
+   "statement": "「掌侧面接豌豆骨」描述的是三角骨。",
+   "answer": true,
+   "hint": "近侧列腕骨内侧者。",
+   "explain": "三角骨：近侧列腕骨内侧者。掌侧面接豌豆骨；参与腕尺侧稳定。"
+  },
+  {
+   "id": "tf_pisiform",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "pisiform",
+   "statement": "「腰部血供差，骨折易不愈合」描述的是豌豆骨。",
+   "answer": false,
+   "hint": "籽骨样小骨，位于三角骨掌侧。",
+   "explain": "该特征属于手舟骨（近侧列腕骨外侧者，形似小船。）。豌豆骨的特征是：包于尺侧腕屈肌腱内；为腕尺侧的皮下标志。"
+  },
+  {
+   "id": "tf_trapezium",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "trapezium",
+   "statement": "「鞍状关节面接第 1 掌骨」描述的是大多角骨。",
+   "answer": true,
+   "hint": "远侧列腕骨外侧者。",
+   "explain": "大多角骨：远侧列腕骨外侧者。鞍状关节面接第 1 掌骨；司拇指对掌的灵活运动。"
+  },
+  {
+   "id": "tf_trapezoid",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "trapezoid",
+   "statement": "「鞍状关节面接第 1 掌骨」描述的是小多角骨。",
+   "answer": false,
+   "hint": "远侧列腕骨中最小者。",
+   "explain": "该特征属于大多角骨（远侧列腕骨外侧者。）。小多角骨的特征是：接第 2 掌骨底；与大多角骨、头状骨相邻。"
+  },
+  {
+   "id": "tf_capitate",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "capitate",
+   "statement": "「底接第 3 掌骨」描述的是头状骨。",
+   "answer": true,
+   "hint": "腕骨中最大者，居中央。",
+   "explain": "头状骨：腕骨中最大者，居中央。头接月骨；底接第 3 掌骨；为腕骨排列的中心标志。"
+  },
+  {
+   "id": "tf_hamate",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "hamate",
+   "statement": "「与桡骨下端相关节」描述的是钩骨。",
+   "answer": false,
+   "hint": "远侧列腕骨内侧者。",
+   "explain": "该特征属于月状骨（近侧列腕骨中央者，呈半月形。）。钩骨的特征是：掌侧钩突构成腕管尺侧壁；接第 4、5 掌骨。"
+  },
+  {
+   "id": "tf_metacarpal",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "metacarpal",
+   "statement": "「底接腕骨、头接指骨」描述的是掌骨 · 第3。",
+   "answer": true,
+   "hint": "掌骨共 5 块，第 3 掌骨为代表。",
+   "explain": "掌骨 · 第3：掌骨共 5 块，第 3 掌骨为代表。底接腕骨、头接指骨；第 1 掌骨短粗、司拇指；第 3 掌骨底背面有茎突。"
+  },
+  {
+   "id": "tf_proximal_phalanx_of_finger",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "bone": "proximal_phalanx_of_finger",
+   "statement": "「下端细小，头接桡骨」描述的是指骨 · 近节。",
+   "answer": false,
+   "hint": "指骨每手 14 块：拇指 2 节，余指 3 节。",
+   "explain": "该特征属于尺骨（前臂内侧（小指侧）的长骨。）。指骨 · 近节的特征是：近节底接掌骨头；滑车与中节相关节；骨折后影响握拳功能。"
+  },
+  {
+   "id": "tf_hip_bone",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "hip_bone",
+   "statement": "「两侧髋骨与骶尾骨围成骨盆」描述的是髋骨。",
+   "answer": true,
+   "hint": "髂、坐、耻三骨融合成的不规则骨。",
+   "explain": "髋骨：髂、坐、耻三骨融合成的不规则骨。三骨会于髋臼、接股骨头；耳状面接骶骨；两侧髋骨与骶尾骨围成骨盆。"
+  },
+  {
+   "id": "tf_femur",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "femur",
+   "statement": "「较指骨短小」描述的是股骨。",
+   "answer": false,
+   "hint": "人体最长、最粗的长骨。",
+   "explain": "该特征属于趾骨 · 近节（趾骨每足 14 块：拇趾 2 节，余趾 3 节。）。股骨的特征是：股骨头接髋臼；颈干角约 125°；大转子为体表标志；下端内、外侧髁接胫骨。"
+  },
+  {
+   "id": "tf_patella",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "patella",
+   "statement": "「后面关节面接股骨髌面」描述的是髌骨。",
+   "answer": true,
+   "hint": "人体最大的籽骨，包于股四头肌腱内。",
+   "explain": "髌骨：人体最大的籽骨，包于股四头肌腱内。后面关节面接股骨髌面；保护膝关节并增大股四头肌力臂。"
+  },
+  {
+   "id": "tf_tibia",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "tibia",
+   "statement": "「底接跗骨、头接趾骨」描述的是胫骨。",
+   "answer": false,
+   "hint": "小腿内侧粗大的承重骨。",
+   "explain": "该特征属于跖骨 · 第3（跖骨共 5 块，第 3 跖骨为代表。）。胫骨的特征是：上端内、外侧髁接股骨；胫骨粗隆接髌韧带；下端内踝为踝部标志。"
+  },
+  {
+   "id": "tf_fibula",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "fibula",
+   "statement": "「腓骨头接胫骨外侧髁」描述的是腓骨。",
+   "answer": true,
+   "hint": "小腿外侧的细长骨，不直接承重。",
+   "explain": "腓骨：小腿外侧的细长骨，不直接承重。腓骨头接胫骨外侧髁；下端外踝构成踝穴外壁；供小腿肌附着。"
+  },
+  {
+   "id": "tf_talus",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "talus",
+   "statement": "「两侧髋骨与骶尾骨围成骨盆」描述的是距骨。",
+   "answer": false,
+   "hint": "跗骨最上方者，承接小腿重量。",
+   "explain": "该特征属于髋骨（髂、坐、耻三骨融合成的不规则骨。）。距骨的特征是：滑车接胫、腓骨下端；头接足舟骨；无肌附着、血供较差。"
+  },
+  {
+   "id": "tf_calcaneus",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "calcaneus",
+   "statement": "「载距突承托距骨颈」描述的是跟骨。",
+   "answer": true,
+   "hint": "最大的跗骨，构成足跟。",
+   "explain": "跟骨：最大的跗骨，构成足跟。跟结节接跟腱；上面接距骨；载距突承托距骨颈。"
+  },
+  {
+   "id": "tf_navicular_bone_of_foot",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "navicular_bone_of_foot",
+   "statement": "「胫骨粗隆接髌韧带」描述的是足舟骨。",
+   "answer": false,
+   "hint": "跗骨内侧者，位于距骨头前方。",
+   "explain": "该特征属于胫骨（小腿内侧粗大的承重骨。）。足舟骨的特征是：内侧面舟骨粗隆为体表标志；前接三块楔骨。"
+  },
+  {
+   "id": "tf_cuboid_bone",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "cuboid_bone",
+   "statement": "「后接跟骨、前接第 4、5 跖骨」描述的是骰骨。",
+   "answer": true,
+   "hint": "跗骨外侧者。",
+   "explain": "骰骨：跗骨外侧者。后接跟骨、前接第 4、5 跖骨；下面有腓骨长肌腱沟。"
+  },
+  {
+   "id": "tf_medial_cuneiform",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "medial_cuneiform",
+   "statement": "「后面关节面接股骨髌面」描述的是内侧楔骨。",
+   "answer": false,
+   "hint": "三块楔骨中最大者。",
+   "explain": "该特征属于髌骨（人体最大的籽骨，包于股四头肌腱内。）。内侧楔骨的特征是：前接第 1 跖骨；与足舟骨、中间楔骨相邻。"
+  },
+  {
+   "id": "tf_intermediate_cuneiform",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "intermediate_cuneiform",
+   "statement": "「前接第 2 跖骨」描述的是中间楔骨。",
+   "answer": true,
+   "hint": "三块楔骨中最小者。",
+   "explain": "中间楔骨：三块楔骨中最小者。前接第 2 跖骨；嵌于内、外侧楔骨之间。"
+  },
+  {
+   "id": "tf_lateral_cuneiform",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "lateral_cuneiform",
+   "statement": "「拇趾末节承托蹬地力」描述的是外侧楔骨。",
+   "answer": false,
+   "hint": "居中间楔骨与骰骨之间。",
+   "explain": "该特征属于趾骨 · 近节（趾骨每足 14 块：拇趾 2 节，余趾 3 节。）。外侧楔骨的特征是：前接第 3 跖骨；参与足横弓构成。"
+  },
+  {
+   "id": "tf_metatarsal",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "metatarsal",
+   "statement": "「第 5 跖骨底粗隆易撕脱骨折」描述的是跖骨 · 第3。",
+   "answer": true,
+   "hint": "跖骨共 5 块，第 3 跖骨为代表。",
+   "explain": "跖骨 · 第3：跖骨共 5 块，第 3 跖骨为代表。底接跗骨、头接趾骨；第 1 跖骨粗大、承重多；第 5 跖骨底粗隆易撕脱骨折。"
+  },
+  {
+   "id": "tf_proximal_phalanx_of_toe",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": false,
+   "bone": "proximal_phalanx_of_toe",
+   "statement": "「后接跟骨、前接第 4、5 跖骨」描述的是趾骨 · 近节。",
+   "answer": false,
+   "hint": "趾骨每足 14 块：拇趾 2 节，余趾 3 节。",
+   "explain": "该特征属于骰骨（跗骨外侧者。）。趾骨 · 近节的特征是：近节底接跖骨头；较指骨短小；拇趾末节承托蹬地力。"
+  },
+  {
+   "id": "tf_coccyx",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": false,
+   "bone": "coccyx",
+   "statement": "「为盆底肌与韧带附着点」描述的是尾骨。",
+   "answer": true,
+   "hint": "3–4 块退化尾椎融合的小三角骨。",
+   "explain": "尾骨：3–4 块退化尾椎融合的小三角骨。上接骶骨尖；为盆底肌与韧带附着点；跌倒时易挫伤。"
+  },
+  {
+   "id": "cm1",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "stem": "腕骨近侧列从桡侧到尺侧依次为？",
+   "options": [
+    "舟骨、月骨、三角骨、豌豆骨",
+    "舟骨、三角骨、月骨、豌豆骨",
+    "月骨、舟骨、豌豆骨、三角骨",
+    "大多角骨、小多角骨、头状骨、钩骨"
+   ],
+   "answer": 0,
+   "explain": "口诀「舟月三角豆」即近侧列从桡侧到尺侧：手舟骨、月骨、三角骨、豌豆骨；远侧列为「大小头状钩」。"
+  },
+  {
+   "id": "cm2",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "stem": "腕骨远侧列从桡侧到尺侧依次为？",
+   "options": [
+    "大多角骨、小多角骨、头状骨、钩骨",
+    "头状骨、钩骨、大多角骨、小多角骨",
+    "小多角骨、大多角骨、钩骨、头状骨",
+    "舟骨、月骨、三角骨、豌豆骨"
+   ],
+   "answer": 0,
+   "explain": "口诀「大小头状钩」即远侧列从桡侧到尺侧：大多角骨、小多角骨、头状骨、钩骨。"
+  },
+  {
+   "id": "cm3",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "stem": "跗骨共 7 块，下列哪块不属于跗骨？",
+   "options": [
+    "足舟骨",
+    "骰骨",
+    "豌豆骨",
+    "距骨"
+   ],
+   "answer": 2,
+   "explain": "豌豆骨属于腕骨；跗骨 7 块为距骨、跟骨、足舟骨、骰骨与三块楔骨（口诀「上距下跟舟外骰，楔一楔二楔外三」）。"
+  },
+  {
+   "id": "cm4",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "stem": "颈椎、胸椎、腰椎合计共多少块？",
+   "options": [
+    "24 块",
+    "26 块",
+    "33 块",
+    "12 块"
+   ],
+   "answer": 0,
+   "explain": "颈 7、胸 12、腰 5 共 24 块可动椎；加上骶骨、尾骨各 1 块才是 26 块椎骨。"
+  },
+  {
+   "id": "cm5",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "stem": "胸骨角两侧平对？",
+   "options": [
+    "第 2 肋",
+    "第 1 肋",
+    "第 3 肋",
+    "第 7 颈椎棘突"
+   ],
+   "answer": 0,
+   "explain": "胸骨柄与胸骨体连接处微向前突称胸骨角，两侧平对第 2 肋，是计数肋序的标志。"
+  },
+  {
+   "id": "cm6",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "stem": "计数肋序最常用的体表标志是？",
+   "options": [
+    "胸骨角",
+    "剑突",
+    "颈静脉切迹",
+    "肋弓最低点"
+   ],
+   "answer": 0,
+   "explain": "胸骨角平对第 2 肋，由此向下可逐一计数肋骨与肋间隙。"
+  },
+  {
+   "id": "cm7",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "stem": "脑颅骨共几块？",
+   "options": [
+    "8 块",
+    "15 块",
+    "23 块",
+    "6 块"
+   ],
+   "answer": 0,
+   "explain": "脑颅 8 块：额、枕、蝶、筛各 1，顶、颞各 2；面颅 15 块，合计 23 块（不含听小骨）。"
+  },
+  {
+   "id": "cm8",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "stem": "面颅骨共几块？",
+   "options": [
+    "15 块",
+    "8 块",
+    "23 块",
+    "14 块"
+   ],
+   "answer": 0,
+   "explain": "面颅 15 块：成对的上颌骨、腭骨、骨、鼻骨、泪骨、下鼻甲，不成对的犁骨、下颌骨、舌骨。"
+  },
+  {
+   "id": "cm9",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "stem": "下列哪组脑颅骨是成对的？",
+   "options": [
+    "顶骨与颞骨",
+    "额骨与枕骨",
+    "蝶骨与筛骨",
+    "额骨与蝶骨"
+   ],
+   "answer": 0,
+   "explain": "脑颅中只有顶骨、颞骨成对；额、枕、蝶、筛均为单块。"
+  },
+  {
+   "id": "cm10",
+   "kind": "mcq",
+   "scope": "skull",
+   "reviewed": true,
+   "stem": "下列哪组面颅骨是不成对的？",
+   "options": [
+    "犁骨、下颌骨、舌骨",
+    "上颌骨、鼻骨",
+    "颧骨、泪骨",
+    "腭骨、下鼻甲"
+   ],
+   "answer": 0,
+   "explain": "面颅不成对者为犁骨、下颌骨、舌骨（口诀「梨下舌」）；其余面颅骨均成对。"
+  },
+  {
+   "id": "cm11",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "stem": "成人终生保留红骨髓的骨不包括？",
+   "options": [
+    "椎骨",
+    "胸骨",
+    "髂骨",
+    "股骨骨干"
+   ],
+   "answer": 3,
+   "explain": "口诀「警察追凶，又掐又勒」谐音椎骨、胸骨、髂骨、肋骨终生含红骨髓；长骨骨干成年后为黄骨髓。"
+  },
+  {
+   "id": "cm12",
+   "kind": "mcq",
+   "scope": "lower",
+   "reviewed": true,
+   "stem": "两侧髂嵴最高点的连线平对？",
+   "options": [
+    "第 4 腰椎棘突",
+    "第 2 腰椎棘突",
+    "第 5 腰椎棘突",
+    "第 12 胸椎棘突"
+   ],
+   "answer": 0,
+   "explain": "髂嵴最高点连线约平第 4 腰椎棘突，是腰椎穿刺定位的体表标志。"
+  },
+  {
+   "id": "cm13",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": true,
+   "stem": "跌倒时手掌撑地，随后「鼻烟窝」压痛，最易骨折的腕骨是？",
+   "options": [
+    "手舟骨",
+    "月骨",
+    "豌豆骨",
+    "钩骨"
+   ],
+   "answer": 0,
+   "explain": "手舟骨腰部血供差，掌撑地暴力易致其骨折，鼻烟窝压痛是典型体征，且易延迟愈合。"
+  },
+  {
+   "id": "cm14",
+   "kind": "mcq",
+   "scope": "trunk",
+   "reviewed": true,
+   "stem": "第 8–10 肋前端借肋软骨连于上位肋软骨，这类肋称为？",
+   "options": [
+    "假肋",
+    "真肋",
+    "浮肋",
+    "颈肋"
+   ],
+   "answer": 0,
+   "explain": "1–7 真肋直连胸骨；8–10 假肋连于上位肋软骨形成肋弓；11–12 浮肋前端游离。"
+  },
+  {
+   "id": "ct1",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": true,
+   "statement": "腕骨共 8 块，排成近、远两列。",
+   "answer": true,
+   "explain": "腕骨 8 块：近侧列舟、月、三角、豌豆，远侧列大、小多角、头、钩。"
+  },
+  {
+   "id": "ct2",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": true,
+   "statement": "拇指有 3 节指骨。",
+   "answer": false,
+   "explain": "拇指只有 2 节指骨（近节、远节），其余各指 3 节；每手共 14 块指骨。"
+  },
+  {
+   "id": "ct3",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": true,
+   "statement": "每手共有 14 块指骨。",
+   "answer": true,
+   "explain": "拇指 2 节 + 其余四指各 3 节 = 14 块；足趾 likewise 每足 14 块。"
+  },
+  {
+   "id": "ct4",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": true,
+   "statement": "髌骨是人体最大的籽骨。",
+   "answer": true,
+   "explain": "髌骨包于股四头肌腱内，是人体最大的籽骨，保护膝关节并增大伸膝力臂。"
+  },
+  {
+   "id": "ct5",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": true,
+   "statement": "舌骨不与任何骨直接相关节。",
+   "answer": true,
+   "explain": "舌骨借肌和韧带悬于颞骨茎突，是全身唯一不与其他骨直接相连的骨。"
+  },
+  {
+   "id": "ct6",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": true,
+   "statement": "所有颈椎都有椎体。",
+   "answer": false,
+   "explain": "寰椎（C1）无椎体与棘突，呈环形；齿突原属寰椎椎体，发育中并入枢椎。"
+  },
+  {
+   "id": "ct7",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": true,
+   "statement": "胸椎棘突长，呈叠瓦状斜向后下。",
+   "answer": true,
+   "explain": "胸椎棘突细长、斜向后下呈叠瓦状，与颈椎短分叉、腰椎板状水平棘突相区别。"
+  },
+  {
+   "id": "ct8",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": true,
+   "statement": "第 11、12 肋前端游离，称浮肋。",
+   "answer": true,
+   "explain": "浮肋前端游离于腹壁肌中；真肋 1–7 直连胸骨，假肋 8–10 连上位肋软骨。"
+  },
+  {
+   "id": "ct9",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": true,
+   "statement": "锁骨中、外 1/3 交界处最易骨折。",
+   "answer": true,
+   "explain": "锁骨呈 S 形，中外交界处为形态与受力转折點，跌倒撑地时最易骨折。"
+  },
+  {
+   "id": "ct10",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": true,
+   "statement": "腓骨下端膨大构成内踝。",
+   "answer": false,
+   "explain": "腓骨下端构成外踝；内踝由胫骨下端构成。"
+  },
+  {
+   "id": "ct11",
+   "kind": "tf",
+   "scope": "lower",
+   "reviewed": true,
+   "statement": "胫骨粗隆有髌韧带附着。",
+   "answer": true,
+   "explain": "髌韧带止于胫骨粗隆，是膝跳反射的叩击定位标志。"
+  },
+  {
+   "id": "ct12",
+   "kind": "tf",
+   "scope": "trunk",
+   "reviewed": true,
+   "statement": "骶骨由 5 块骶椎融合而成。",
+   "answer": true,
+   "explain": "5 块骶椎融合为三角形骶骨，岬为产科测量标志，耳状面与髋骨构成骶髂关节。"
+  },
+  {
+   "id": "ct13",
+   "kind": "tf",
+   "scope": "skull",
+   "reviewed": true,
+   "statement": "颅骨共 23 块，不包括中耳内的听小骨。",
+   "answer": true,
+   "explain": "脑颅 8 + 面颅 15 = 23 块；6 块听小骨单独计数。"
+  },
+  {
+   "id": "m1",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "解剖学姿势（手掌向前）下，位于前臂外侧、拇指一侧的骨是？",
+   "options": [
+    "桡骨",
+    "尺骨",
+    "肱骨",
+    "锁骨"
+   ],
+   "answer": 0,
+   "explain": "解剖位口诀“桡外尺内”：拇指侧是桡骨，小指侧是尺骨。肱骨在上臂，锁骨在肩前，都不在前臂。",
+   "bone": "radius"
+  },
+  {
+   "id": "m2",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "上端呈圆盘状、与肱骨小头相关节的前臂骨是？",
+   "options": [
+    "尺骨",
+    "桡骨",
+    "肩胛骨",
+    "手舟骨"
+   ],
+   "answer": 1,
+   "explain": "圆盘状的桡骨头是桡骨的标志性特征，它与肱骨小头相关节；尺骨上端粗大，靠滑车切迹“咬”住肱骨滑车。",
+   "bone": "radius"
+  },
+  {
+   "id": "m3",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "上端有鹰嘴、屈肘时在肘后皮下最易摸到的骨是？",
+   "options": [
+    "桡骨",
+    "肱骨",
+    "尺骨",
+    "锁骨"
+   ],
+   "answer": 2,
+   "explain": "鹰嘴属于尺骨上端，屈肘时它就是肘后最突出的骨性标志；摸到鹰嘴，就找到了尺骨。",
+   "bone": "radius"
+  },
+  {
+   "id": "m4",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "前臂做旋前、旋后运动时，桡骨围绕哪块骨旋转？",
+   "options": [
+    "肱骨",
+    "尺骨",
+    "桡骨自身",
+    "手舟骨"
+   ],
+   "answer": 1,
+   "explain": "前臂旋转以尺骨为轴：尺骨基本不动，桡骨头原地自转、远端带着手绕尺骨交叉过去，旋前时两骨呈交叉状。",
+   "bone": "radius"
+  },
+  {
+   "id": "m5",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "下端膨大、直接参与桡腕关节构成的前臂骨是？",
+   "options": [
+    "桡骨",
+    "尺骨",
+    "肱骨",
+    "大多角骨"
+   ],
+   "answer": 0,
+   "explain": "桡骨下端膨大，其腕关节面直接与近排腕骨构成桡腕关节；尺骨下端细小，借关节盘隔开，不直接参与。",
+   "bone": "ulna"
+  },
+  {
+   "id": "m6",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "尺骨上端与肱骨滑车相关节的结构是？",
+   "options": [
+    "桡切迹",
+    "滑车切迹",
+    "桡骨头凹",
+    "尺切迹"
+   ],
+   "answer": 1,
+   "explain": "尺骨上端的滑车切迹像扳手口一样包住肱骨滑车，构成肘关节的肱尺部分；桡切迹在滑车切迹外侧，与桡骨头相关节。",
+   "bone": "ulna"
+  },
+  {
+   "id": "m7",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "关于前臂两骨两端粗细的描述，正确的是？",
+   "options": [
+    "桡骨上端粗大、下端细小",
+    "尺骨上端粗大、下端细小",
+    "两骨下端都膨大",
+    "两骨上端都是圆盘状"
+   ],
+   "answer": 1,
+   "explain": "尺骨上端粗大（鹰嘴+滑车切迹）、下端细小（尺骨头）；桡骨相反，上端是圆盘状小头、下端膨大。认两端粗细是最可靠的鉴别法。",
+   "bone": "ulna"
+  },
+  {
+   "id": "m8",
+   "kind": "mcq",
+   "scope": "upper",
+   "reviewed": false,
+   "stem": "前臂旋前（手背转向前）时，桡骨与尺骨的位置关系是？",
+   "options": [
+    "两骨平行排列",
+    "两骨交叉，桡骨转到尺骨前方",
+    "两骨交叉，尺骨转到桡骨前方",
+    "两骨完全重叠"
+   ],
+   "answer": 1,
+   "explain": "旋前时桡骨绕尺骨旋转，远端带着手转到尺骨前方，两骨呈交叉状；尺骨作为旋转轴基本不动。",
+   "bone": "ulna"
+  },
+  {
+   "id": "t1",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "解剖学姿势下，桡骨位于前臂内侧（小指一侧）。",
+   "answer": false,
+   "explain": "正好相反：解剖位“桡外尺内”，桡骨在外侧、拇指一侧，尺骨才在内侧、小指一侧。",
+   "bone": "radius"
+  },
+  {
+   "id": "t2",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "尺骨上端有鹰嘴，屈肘时可在肘后皮下摸到。",
+   "answer": true,
+   "explain": "鹰嘴是尺骨上端向后的突起，屈肘时即为肘后最明显的骨性标志，是判断尺骨的可靠依据。",
+   "bone": "ulna"
+  },
+  {
+   "id": "t3",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "桡骨下端细小，不参与腕关节的构成。",
+   "answer": false,
+   "explain": "桡骨下端膨大，其腕关节面直接参与桡腕关节；下端细小、不直接参与腕关节的是尺骨。",
+   "bone": "radius"
+  },
+  {
+   "id": "t4",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "前臂旋前时，桡骨与尺骨仍保持平行排列。",
+   "answer": false,
+   "explain": "旋前时桡骨绕尺骨旋转、两骨交叉；只有旋后（解剖位）时两骨才平行并列。",
+   "bone": "ulna"
+  },
+  {
+   "id": "t5",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "桡骨上端为圆盘状的桡骨头，与肱骨小头相关节。",
+   "answer": true,
+   "explain": "圆盘状桡骨头是桡骨的标志性形态，上面的关节凹与肱骨小头相关节，参与肘关节构成。",
+   "bone": "radius"
+  },
+  {
+   "id": "t6",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "前臂的旋前、旋后运动以尺骨为轴，桡骨围绕尺骨旋转。",
+   "answer": true,
+   "explain": "尺骨是前臂旋转的固定轴，桡骨头在近端自转、远端绕尺骨划弧，带动手完成翻掌动作。",
+   "bone": "ulna"
+  },
+  {
+   "id": "t7",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "从后面观察前臂骨时，两骨的左右位置互换，但两端形态特征不变。",
+   "answer": true,
+   "explain": "换观察面只改变画面左右，不改变骨本身的形态：上端圆盘头、下端粗大的仍是桡骨。认两端比死记左右可靠。",
+   "bone": "radius"
+  },
+  {
+   "id": "t8",
+   "kind": "tf",
+   "scope": "upper",
+   "reviewed": false,
+   "statement": "前臂两根骨中，下端粗大的是尺骨。",
+   "answer": false,
+   "explain": "下端粗大的是桡骨；尺骨下端细小，称尺骨头。“桡骨下粗上细、尺骨上粗下细”是核心鉴别点。",
+   "bone": "ulna"
+  }
+ ]
+}

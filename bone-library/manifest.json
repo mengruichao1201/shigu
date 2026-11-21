@@ -1,0 +1,1070 @@
+{
+  "source": "BodyParts3D/Anatomography v4.0 (99% decimated OBJ), (c) The Database Center for Life Science, CC BY-SA 2.1 JP",
+  "sourceUrl": "https://dbarchive.biosciencedbc.jp/jp/bodyparts3d/download.html",
+  "sidePolicy": "paired bones: right side; midline bones: whole",
+  "views": [
+    "front",
+    "side",
+    "back"
+  ],
+  "gaps": [],
+  "bones": [
+    {
+      "cat": "01_颅骨",
+      "cn": "额骨",
+      "en": "frontal bone",
+      "fma": "FMA52734",
+      "files": [
+        "FJ3200.obj"
+      ],
+      "verts": 8472,
+      "dims_mm": [
+        125.3,
+        70.7,
+        109.0
+      ],
+      "views": {
+        "front": "01_颅骨/额骨/frontal_bone_front.png",
+        "side": "01_颅骨/额骨/frontal_bone_side.png",
+        "back": "01_颅骨/额骨/frontal_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "顶骨",
+      "en": "parietal bone",
+      "fma": "FMA52788",
+      "files": [
+        "FJ3380.obj"
+      ],
+      "verts": 8028,
+      "dims_mm": [
+        81.2,
+        142.7,
+        118.4
+      ],
+      "views": {
+        "front": "01_颅骨/顶骨/parietal_bone_front.png",
+        "side": "01_颅骨/顶骨/parietal_bone_side.png",
+        "back": "01_颅骨/顶骨/parietal_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "颞骨",
+      "en": "temporal bone",
+      "fma": "FMA52738",
+      "files": [
+        "FJ3386.obj"
+      ],
+      "verts": 3102,
+      "dims_mm": [
+        61.3,
+        98.7,
+        76.0
+      ],
+      "views": {
+        "front": "01_颅骨/颞骨/temporal_bone_front.png",
+        "side": "01_颅骨/颞骨/temporal_bone_side.png",
+        "back": "01_颅骨/颞骨/temporal_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "枕骨",
+      "en": "occipital bone",
+      "fma": "FMA52735",
+      "files": [
+        "FJ3309.obj"
+      ],
+      "verts": 6995,
+      "dims_mm": [
+        122.7,
+        119.0,
+        106.7
+      ],
+      "views": {
+        "front": "01_颅骨/枕骨/occipital_bone_front.png",
+        "side": "01_颅骨/枕骨/occipital_bone_side.png",
+        "back": "01_颅骨/枕骨/occipital_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "蝶骨",
+      "en": "sphenoid bone",
+      "fma": "FMA52736",
+      "files": [
+        "FJ3394.obj"
+      ],
+      "verts": 4957,
+      "dims_mm": [
+        111.4,
+        54.6,
+        69.5
+      ],
+      "views": {
+        "front": "01_颅骨/蝶骨/sphenoid_bone_front.png",
+        "side": "01_颅骨/蝶骨/sphenoid_bone_side.png",
+        "back": "01_颅骨/蝶骨/sphenoid_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "筛骨",
+      "en": "ethmoid bone",
+      "fma": "FMA52740",
+      "files": [
+        "FJ3199.obj"
+      ],
+      "verts": 12484,
+      "dims_mm": [
+        41.7,
+        47.4,
+        35.1
+      ],
+      "views": {
+        "front": "01_颅骨/筛骨/ethmoid_bone_front.png",
+        "side": "01_颅骨/筛骨/ethmoid_bone_side.png",
+        "back": "01_颅骨/筛骨/ethmoid_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "下颌骨",
+      "en": "mandible",
+      "fma": "FMA52748",
+      "files": [
+        "FJ3289.obj"
+      ],
+      "verts": 2845,
+      "dims_mm": [
+        106.4,
+        84.0,
+        84.5
+      ],
+      "views": {
+        "front": "01_颅骨/下颌骨/mandible_front.png",
+        "side": "01_颅骨/下颌骨/mandible_side.png",
+        "back": "01_颅骨/下颌骨/mandible_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "上颌骨",
+      "en": "maxilla",
+      "fma": "FMA53649",
+      "files": [
+        "FJ3375.obj"
+      ],
+      "verts": 3513,
+      "dims_mm": [
+        47.4,
+        54.7,
+        69.4
+      ],
+      "views": {
+        "front": "01_颅骨/上颌骨/maxilla_front.png",
+        "side": "01_颅骨/上颌骨/maxilla_side.png",
+        "back": "01_颅骨/上颌骨/maxilla_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "颧骨",
+      "en": "zygomatic bone",
+      "fma": "FMA52892",
+      "files": [
+        "FJ3392.obj"
+      ],
+      "verts": 934,
+      "dims_mm": [
+        31.3,
+        39.7,
+        56.0
+      ],
+      "views": {
+        "front": "01_颅骨/颧骨/zygomatic_bone_front.png",
+        "side": "01_颅骨/颧骨/zygomatic_bone_side.png",
+        "back": "01_颅骨/颧骨/zygomatic_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "鼻骨",
+      "en": "nasal bone",
+      "fma": "FMA53647",
+      "files": [
+        "FJ3378.obj"
+      ],
+      "verts": 265,
+      "dims_mm": [
+        8.4,
+        21.2,
+        32.0
+      ],
+      "views": {
+        "front": "01_颅骨/鼻骨/nasal_bone_front.png",
+        "side": "01_颅骨/鼻骨/nasal_bone_side.png",
+        "back": "01_颅骨/鼻骨/nasal_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "泪骨",
+      "en": "lacrimal bone",
+      "fma": "FMA53645",
+      "files": [
+        "FJ3371.obj"
+      ],
+      "verts": 401,
+      "dims_mm": [
+        10.6,
+        14.6,
+        25.5
+      ],
+      "views": {
+        "front": "01_颅骨/泪骨/lacrimal_bone_front.png",
+        "side": "01_颅骨/泪骨/lacrimal_bone_side.png",
+        "back": "01_颅骨/泪骨/lacrimal_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "腭骨",
+      "en": "palatine bone",
+      "fma": "FMA53655",
+      "files": [
+        "FJ3379.obj"
+      ],
+      "verts": 1132,
+      "dims_mm": [
+        29.0,
+        46.6,
+        42.9
+      ],
+      "views": {
+        "front": "01_颅骨/腭骨/palatine_bone_front.png",
+        "side": "01_颅骨/腭骨/palatine_bone_side.png",
+        "back": "01_颅骨/腭骨/palatine_bone_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "下鼻甲",
+      "en": "inferior nasal concha",
+      "fma": "FMA54737",
+      "files": [
+        "FJ3369.obj"
+      ],
+      "verts": 572,
+      "dims_mm": [
+        9.8,
+        36.4,
+        20.0
+      ],
+      "views": {
+        "front": "01_颅骨/下鼻甲/inferior_nasal_concha_front.png",
+        "side": "01_颅骨/下鼻甲/inferior_nasal_concha_side.png",
+        "back": "01_颅骨/下鼻甲/inferior_nasal_concha_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "犁骨",
+      "en": "vomer",
+      "fma": "FMA9710",
+      "files": [
+        "FJ3395.obj"
+      ],
+      "verts": 3660,
+      "dims_mm": [
+        10.9,
+        55.1,
+        43.5
+      ],
+      "views": {
+        "front": "01_颅骨/犁骨/vomer_front.png",
+        "side": "01_颅骨/犁骨/vomer_side.png",
+        "back": "01_颅骨/犁骨/vomer_back.png"
+      }
+    },
+    {
+      "cat": "01_颅骨",
+      "cn": "舌骨",
+      "en": "hyoid bone",
+      "fma": "FMA52749",
+      "files": [
+        "FJ2772.obj",
+        "FJ3201.obj"
+      ],
+      "verts": 1374,
+      "dims_mm": [
+        37.8,
+        34.6,
+        18.5
+      ],
+      "views": {
+        "front": "01_颅骨/舌骨/hyoid_bone_front.png",
+        "side": "01_颅骨/舌骨/hyoid_bone_side.png",
+        "back": "01_颅骨/舌骨/hyoid_bone_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "寰椎_C1",
+      "en": "atlas (C1)",
+      "fma": "FMA12519",
+      "files": [
+        "FJ3176.obj"
+      ],
+      "verts": 1433,
+      "dims_mm": [
+        81.6,
+        47.0,
+        19.2
+      ],
+      "views": {
+        "front": "02_躯干骨/寰椎_C1/atlas_front.png",
+        "side": "02_躯干骨/寰椎_C1/atlas_side.png",
+        "back": "02_躯干骨/寰椎_C1/atlas_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "枢椎_C2",
+      "en": "axis (C2)",
+      "fma": "FMA12520",
+      "files": [
+        "FJ3177.obj"
+      ],
+      "verts": 1540,
+      "dims_mm": [
+        50.5,
+        49.9,
+        45.2
+      ],
+      "views": {
+        "front": "02_躯干骨/枢椎_C2/axis_front.png",
+        "side": "02_躯干骨/枢椎_C2/axis_side.png",
+        "back": "02_躯干骨/枢椎_C2/axis_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "颈椎_C7",
+      "en": "cervical vertebra (C7, vertebra prominens)",
+      "fma": "FMA12525",
+      "files": [
+        "FJ3172.obj"
+      ],
+      "verts": 1324,
+      "dims_mm": [
+        65.2,
+        68.8,
+        27.1
+      ],
+      "views": {
+        "front": "02_躯干骨/颈椎_C7/cervical_vertebra_front.png",
+        "side": "02_躯干骨/颈椎_C7/cervical_vertebra_side.png",
+        "back": "02_躯干骨/颈椎_C7/cervical_vertebra_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "胸椎_T5",
+      "en": "thoracic vertebra (T5)",
+      "fma": "FMA9922",
+      "files": [
+        "FJ3169.obj"
+      ],
+      "verts": 1321,
+      "dims_mm": [
+        71.0,
+        66.0,
+        57.5
+      ],
+      "views": {
+        "front": "02_躯干骨/胸椎_T5/thoracic_vertebra_front.png",
+        "side": "02_躯干骨/胸椎_T5/thoracic_vertebra_side.png",
+        "back": "02_躯干骨/胸椎_T5/thoracic_vertebra_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "腰椎_L3",
+      "en": "lumbar vertebra (L3)",
+      "fma": "FMA13074",
+      "files": [
+        "FJ3162.obj"
+      ],
+      "verts": 1849,
+      "dims_mm": [
+        79.0,
+        85.8,
+        42.0
+      ],
+      "views": {
+        "front": "02_躯干骨/腰椎_L3/lumbar_vertebra_front.png",
+        "side": "02_躯干骨/腰椎_L3/lumbar_vertebra_side.png",
+        "back": "02_躯干骨/腰椎_L3/lumbar_vertebra_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "骶骨",
+      "en": "sacrum",
+      "fma": "FMA16202",
+      "files": [
+        "FJ3393.obj"
+      ],
+      "verts": 5293,
+      "dims_mm": [
+        117.8,
+        88.7,
+        144.4
+      ],
+      "views": {
+        "front": "02_躯干骨/骶骨/sacrum_front.png",
+        "side": "02_躯干骨/骶骨/sacrum_side.png",
+        "back": "02_躯干骨/骶骨/sacrum_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "肋骨_第7肋",
+      "en": "rib (7th, typical)",
+      "fma": "FMA8229",
+      "files": [
+        "FJ3346.obj"
+      ],
+      "verts": 5058,
+      "dims_mm": [
+        123.4,
+        175.7,
+        135.1
+      ],
+      "views": {
+        "front": "02_躯干骨/肋骨_第7肋/rib_front.png",
+        "side": "02_躯干骨/肋骨_第7肋/rib_side.png",
+        "back": "02_躯干骨/肋骨_第7肋/rib_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "胸骨",
+      "en": "sternum (manubrium + body + xiphoid)",
+      "fma": "FMA7486+FMA7487+FMA7488",
+      "files": [
+        "FJ3290.obj",
+        "FJ3178.obj",
+        "FJ3153.obj"
+      ],
+      "verts": 5632,
+      "dims_mm": [
+        54.9,
+        83.0,
+        161.2
+      ],
+      "views": {
+        "front": "02_躯干骨/胸骨/sternum_front.png",
+        "side": "02_躯干骨/胸骨/sternum_side.png",
+        "back": "02_躯干骨/胸骨/sternum_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "锁骨",
+      "en": "clavicle",
+      "fma": "FMA13322",
+      "files": [
+        "FJ3362.obj"
+      ],
+      "verts": 583,
+      "dims_mm": [
+        135.6,
+        92.5,
+        46.8
+      ],
+      "views": {
+        "front": "03_上肢骨/锁骨/clavicle_front.png",
+        "side": "03_上肢骨/锁骨/clavicle_side.png",
+        "back": "03_上肢骨/锁骨/clavicle_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "肩胛骨",
+      "en": "scapula",
+      "fma": "FMA13395",
+      "files": [
+        "FJ3384.obj"
+      ],
+      "verts": 13118,
+      "dims_mm": [
+        109.4,
+        107.9,
+        165.9
+      ],
+      "views": {
+        "front": "03_上肢骨/肩胛骨/scapula_front.png",
+        "side": "03_上肢骨/肩胛骨/scapula_side.png",
+        "back": "03_上肢骨/肩胛骨/scapula_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "肱骨",
+      "en": "humerus",
+      "fma": "FMA23130",
+      "files": [
+        "FJ3368.obj"
+      ],
+      "verts": 2233,
+      "dims_mm": [
+        100.8,
+        49.2,
+        307.3
+      ],
+      "views": {
+        "front": "03_上肢骨/肱骨/humerus_front.png",
+        "side": "03_上肢骨/肱骨/humerus_side.png",
+        "back": "03_上肢骨/肱骨/humerus_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "桡骨",
+      "en": "radius",
+      "fma": "FMA23464",
+      "files": [
+        "FJ3349.obj"
+      ],
+      "verts": 388,
+      "dims_mm": [
+        59.7,
+        65.8,
+        229.2
+      ],
+      "views": {
+        "front": "03_上肢骨/桡骨/radius_front.png",
+        "side": "03_上肢骨/桡骨/radius_side.png",
+        "back": "03_上肢骨/桡骨/radius_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "尺骨",
+      "en": "ulna",
+      "fma": "FMA23467",
+      "files": [
+        "FJ3391.obj"
+      ],
+      "verts": 500,
+      "dims_mm": [
+        50.3,
+        78.7,
+        247.3
+      ],
+      "views": {
+        "front": "03_上肢骨/尺骨/ulna_front.png",
+        "side": "03_上肢骨/尺骨/ulna_side.png",
+        "back": "03_上肢骨/尺骨/ulna_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "手舟骨",
+      "en": "scaphoid",
+      "fma": "FMA24435",
+      "files": [
+        "FJ3383.obj"
+      ],
+      "verts": 195,
+      "dims_mm": [
+        23.7,
+        15.1,
+        15.4
+      ],
+      "views": {
+        "front": "03_上肢骨/手舟骨/scaphoid_front.png",
+        "side": "03_上肢骨/手舟骨/scaphoid_side.png",
+        "back": "03_上肢骨/手舟骨/scaphoid_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "月状骨",
+      "en": "lunate",
+      "fma": "FMA24437",
+      "files": [
+        "FJ3374.obj"
+      ],
+      "verts": 196,
+      "dims_mm": [
+        16.5,
+        16.3,
+        12.4
+      ],
+      "views": {
+        "front": "03_上肢骨/月状骨/lunate_front.png",
+        "side": "03_上肢骨/月状骨/lunate_side.png",
+        "back": "03_上肢骨/月状骨/lunate_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "三角骨",
+      "en": "triquetral",
+      "fma": "FMA24439",
+      "files": [
+        "FJ3390.obj"
+      ],
+      "verts": 139,
+      "dims_mm": [
+        10.6,
+        15.1,
+        13.8
+      ],
+      "views": {
+        "front": "03_上肢骨/三角骨/triquetral_front.png",
+        "side": "03_上肢骨/三角骨/triquetral_side.png",
+        "back": "03_上肢骨/三角骨/triquetral_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "豌豆骨",
+      "en": "pisiform",
+      "fma": "FMA24441",
+      "files": [
+        "FJ3382.obj"
+      ],
+      "verts": 110,
+      "dims_mm": [
+        8.3,
+        10.4,
+        11.7
+      ],
+      "views": {
+        "front": "03_上肢骨/豌豆骨/pisiform_front.png",
+        "side": "03_上肢骨/豌豆骨/pisiform_side.png",
+        "back": "03_上肢骨/豌豆骨/pisiform_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "大多角骨",
+      "en": "trapezium",
+      "fma": "FMA24443",
+      "files": [
+        "FJ3388.obj"
+      ],
+      "verts": 277,
+      "dims_mm": [
+        16.8,
+        16.8,
+        19.9
+      ],
+      "views": {
+        "front": "03_上肢骨/大多角骨/trapezium_front.png",
+        "side": "03_上肢骨/大多角骨/trapezium_side.png",
+        "back": "03_上肢骨/大多角骨/trapezium_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "小多角骨",
+      "en": "trapezoid",
+      "fma": "FMA23725",
+      "files": [
+        "FJ3389.obj"
+      ],
+      "verts": 271,
+      "dims_mm": [
+        11.1,
+        14.9,
+        12.4
+      ],
+      "views": {
+        "front": "03_上肢骨/小多角骨/trapezoid_front.png",
+        "side": "03_上肢骨/小多角骨/trapezoid_side.png",
+        "back": "03_上肢骨/小多角骨/trapezoid_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "头状骨",
+      "en": "capitate",
+      "fma": "FMA24446",
+      "files": [
+        "FJ3361.obj"
+      ],
+      "verts": 256,
+      "dims_mm": [
+        16.1,
+        17.0,
+        22.4
+      ],
+      "views": {
+        "front": "03_上肢骨/头状骨/capitate_front.png",
+        "side": "03_上肢骨/头状骨/capitate_side.png",
+        "back": "03_上肢骨/头状骨/capitate_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "钩骨",
+      "en": "hamate",
+      "fma": "FMA24448",
+      "files": [
+        "FJ3367.obj"
+      ],
+      "verts": 335,
+      "dims_mm": [
+        15.3,
+        22.5,
+        19.4
+      ],
+      "views": {
+        "front": "03_上肢骨/钩骨/hamate_front.png",
+        "side": "03_上肢骨/钩骨/hamate_side.png",
+        "back": "03_上肢骨/钩骨/hamate_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "掌骨_第3",
+      "en": "metacarpal (3rd)",
+      "fma": "FMA24468",
+      "files": [
+        "FJ3354.obj"
+      ],
+      "verts": 404,
+      "dims_mm": [
+        19.9,
+        30.4,
+        64.4
+      ],
+      "views": {
+        "front": "03_上肢骨/掌骨_第3/metacarpal_front.png",
+        "side": "03_上肢骨/掌骨_第3/metacarpal_side.png",
+        "back": "03_上肢骨/掌骨_第3/metacarpal_back.png"
+      }
+    },
+    {
+      "cat": "03_上肢骨",
+      "cn": "指骨_近节",
+      "en": "proximal phalanx of finger (middle)",
+      "fma": "FMA24452",
+      "files": [
+        "FJ3325.obj"
+      ],
+      "verts": 271,
+      "dims_mm": [
+        18.2,
+        29.1,
+        40.6
+      ],
+      "views": {
+        "front": "03_上肢骨/指骨_近节/proximal_phalanx_of_finger_front.png",
+        "side": "03_上肢骨/指骨_近节/proximal_phalanx_of_finger_side.png",
+        "back": "03_上肢骨/指骨_近节/proximal_phalanx_of_finger_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "髋骨",
+      "en": "hip bone",
+      "fma": "FMA16586",
+      "files": [
+        "FJ3152.obj"
+      ],
+      "verts": 1282,
+      "dims_mm": [
+        142.1,
+        137.9,
+        205.7
+      ],
+      "views": {
+        "front": "04_下肢骨/髋骨/hip_bone_front.png",
+        "side": "04_下肢骨/髋骨/hip_bone_side.png",
+        "back": "04_下肢骨/髋骨/hip_bone_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "股骨",
+      "en": "femur",
+      "fma": "FMA24474",
+      "files": [
+        "FJ3365.obj"
+      ],
+      "verts": 1574,
+      "dims_mm": [
+        118.2,
+        62.7,
+        466.1
+      ],
+      "views": {
+        "front": "04_下肢骨/股骨/femur_front.png",
+        "side": "04_下肢骨/股骨/femur_side.png",
+        "back": "04_下肢骨/股骨/femur_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "髌骨",
+      "en": "patella",
+      "fma": "FMA24486",
+      "files": [
+        "FJ3381.obj"
+      ],
+      "verts": 178,
+      "dims_mm": [
+        41.7,
+        21.7,
+        39.3
+      ],
+      "views": {
+        "front": "04_下肢骨/髌骨/patella_front.png",
+        "side": "04_下肢骨/髌骨/patella_side.png",
+        "back": "04_下肢骨/髌骨/patella_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "胫骨",
+      "en": "tibia",
+      "fma": "FMA24477",
+      "files": [
+        "FJ3387.obj"
+      ],
+      "verts": 857,
+      "dims_mm": [
+        74.1,
+        62.8,
+        380.0
+      ],
+      "views": {
+        "front": "04_下肢骨/胫骨/tibia_front.png",
+        "side": "04_下肢骨/胫骨/tibia_side.png",
+        "back": "04_下肢骨/胫骨/tibia_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "腓骨",
+      "en": "fibula",
+      "fma": "FMA24480",
+      "files": [
+        "FJ3366.obj"
+      ],
+      "verts": 593,
+      "dims_mm": [
+        35.8,
+        29.7,
+        384.4
+      ],
+      "views": {
+        "front": "04_下肢骨/腓骨/fibula_front.png",
+        "side": "04_下肢骨/腓骨/fibula_side.png",
+        "back": "04_下肢骨/腓骨/fibula_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "距骨",
+      "en": "talus",
+      "fma": "FMA24482",
+      "files": [
+        "FJ3385.obj"
+      ],
+      "verts": 812,
+      "dims_mm": [
+        40.5,
+        56.8,
+        34.3
+      ],
+      "views": {
+        "front": "04_下肢骨/距骨/talus_front.png",
+        "side": "04_下肢骨/距骨/talus_side.png",
+        "back": "04_下肢骨/距骨/talus_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "跟骨",
+      "en": "calcaneus",
+      "fma": "FMA24497",
+      "files": [
+        "FJ3360.obj"
+      ],
+      "verts": 739,
+      "dims_mm": [
+        55.9,
+        70.1,
+        49.3
+      ],
+      "views": {
+        "front": "04_下肢骨/跟骨/calcaneus_front.png",
+        "side": "04_下肢骨/跟骨/calcaneus_side.png",
+        "back": "04_下肢骨/跟骨/calcaneus_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "足舟骨",
+      "en": "navicular bone of foot",
+      "fma": "FMA24500",
+      "files": [
+        "FJ3308.obj"
+      ],
+      "verts": 455,
+      "dims_mm": [
+        38.6,
+        26.7,
+        24.6
+      ],
+      "views": {
+        "front": "04_下肢骨/足舟骨/navicular_bone_of_foot_front.png",
+        "side": "04_下肢骨/足舟骨/navicular_bone_of_foot_side.png",
+        "back": "04_下肢骨/足舟骨/navicular_bone_of_foot_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "骰骨",
+      "en": "cuboid bone",
+      "fma": "FMA24528",
+      "files": [
+        "FJ3364.obj"
+      ],
+      "verts": 543,
+      "dims_mm": [
+        32.7,
+        33.0,
+        29.0
+      ],
+      "views": {
+        "front": "04_下肢骨/骰骨/cuboid_bone_front.png",
+        "side": "04_下肢骨/骰骨/cuboid_bone_side.png",
+        "back": "04_下肢骨/骰骨/cuboid_bone_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "内侧楔骨",
+      "en": "medial cuneiform",
+      "fma": "FMA24521",
+      "files": [
+        "FJ3377.obj"
+      ],
+      "verts": 615,
+      "dims_mm": [
+        28.1,
+        28.5,
+        31.0
+      ],
+      "views": {
+        "front": "04_下肢骨/内侧楔骨/medial_cuneiform_front.png",
+        "side": "04_下肢骨/内侧楔骨/medial_cuneiform_side.png",
+        "back": "04_下肢骨/内侧楔骨/medial_cuneiform_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "中间楔骨",
+      "en": "intermediate cuneiform",
+      "fma": "FMA24523",
+      "files": [
+        "FJ3370.obj"
+      ],
+      "verts": 288,
+      "dims_mm": [
+        20.1,
+        20.9,
+        23.1
+      ],
+      "views": {
+        "front": "04_下肢骨/中间楔骨/intermediate_cuneiform_front.png",
+        "side": "04_下肢骨/中间楔骨/intermediate_cuneiform_side.png",
+        "back": "04_下肢骨/中间楔骨/intermediate_cuneiform_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "外侧楔骨",
+      "en": "lateral cuneiform",
+      "fma": "FMA24525",
+      "files": [
+        "FJ3373.obj"
+      ],
+      "verts": 395,
+      "dims_mm": [
+        25.7,
+        24.4,
+        25.7
+      ],
+      "views": {
+        "front": "04_下肢骨/外侧楔骨/lateral_cuneiform_front.png",
+        "side": "04_下肢骨/外侧楔骨/lateral_cuneiform_side.png",
+        "back": "04_下肢骨/外侧楔骨/lateral_cuneiform_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "跖骨_第3",
+      "en": "metatarsal (3rd)",
+      "fma": "FMA24511",
+      "files": [
+        "FJ3355.obj"
+      ],
+      "verts": 423,
+      "dims_mm": [
+        35.3,
+        62.5,
+        42.7
+      ],
+      "views": {
+        "front": "04_下肢骨/跖骨_第3/metatarsal_front.png",
+        "side": "04_下肢骨/跖骨_第3/metatarsal_side.png",
+        "back": "04_下肢骨/跖骨_第3/metatarsal_back.png"
+      }
+    },
+    {
+      "cat": "04_下肢骨",
+      "cn": "趾骨_近节",
+      "en": "proximal phalanx of toe (2nd)",
+      "fma": "FMA32634",
+      "files": [
+        "FJ3319.obj"
+      ],
+      "verts": 236,
+      "dims_mm": [
+        22.2,
+        28.1,
+        12.3
+      ],
+      "views": {
+        "front": "04_下肢骨/趾骨_近节/proximal_phalanx_of_toe_front.png",
+        "side": "04_下肢骨/趾骨_近节/proximal_phalanx_of_toe_side.png",
+        "back": "04_下肢骨/趾骨_近节/proximal_phalanx_of_toe_back.png"
+      }
+    },
+    {
+      "cat": "02_躯干骨",
+      "cn": "尾骨",
+      "en": "coccyx",
+      "fma": null,
+      "files": [],
+      "source": "Gray's Anatomy (1918), public domain; cropped from Wikimedia Commons djvu scans (book pp. 109-110, figs. 97 & 100)",
+      "views": {
+        "front": "02_躯干骨/尾骨/coccyx_front.png",
+        "side": "02_躯干骨/尾骨/coccyx_side.png",
+        "back": "02_躯干骨/尾骨/coccyx_back.png"
+      }
+    }
+  ],
+  "failed": []
+}

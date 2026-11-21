@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>知识库 · 识骨</title>
+<meta name="description" content="识骨知识库：人体骨骼形态图可悬停高光、点击进入颅骨、躯干骨、上肢骨、下肢骨四分区，每块骨三视角图与简介要点。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='9' width='7' height='19' rx='3.5' fill='%23b4432f'/%3E%3Ccircle cx='10.5' cy='7' r='4.5' fill='%23b4432f'/%3E%3Crect x='19' y='4' width='7' height='19' rx='3.5' fill='%2329241d'/%3E%3Ccircle cx='22.5' cy='26' r='3.5' fill='%2329241d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body data-page="kb">
+<div class="page kb-page">
+  <header class="top">
+    <div class="brand-row">
+      <a class="back" href="index.html">← 首页</a>
+      <span class="track">StudyHack · 学习科研</span>
+    </div>
+    <p class="sub">识骨 · 知识库</p>
+  </header>
+
+  <main>
+    <div class="kb-hero">
+      <figure class="body-stage" id="bodyStage" role="img" aria-label="人体骨骼前面观模型，分为颅骨、躯干骨、上肢骨、下肢骨四个可点击区域">
+        <img data-g="trunk" src="assets/bones/body_trunk.webp?v=1" alt="">
+        <img data-g="lower" src="assets/bones/body_lower.webp?v=1" alt="">
+        <img data-g="upper" src="assets/bones/body_upper.webp?v=1" alt="">
+        <img data-g="skull" src="assets/bones/body_skull.webp?v=1" alt="">
+        <span class="body-tag" id="bodyTag"></span>
+      </figure>
+      <div class="kb-intro">
+        <h1>人体骨骼知识库</h1>
+        <p>成人共 206 块骨，按部位分为颅骨、躯干骨与四肢骨（上肢骨、下肢骨）。骨借关节、软骨与韧带相连，构成支架、保护脏器并参与运动。</p>
+        <p>本库收录 53 种骨的代表标本图：每块骨附前面、侧面、后面三视角与简介、要点。成对骨取右侧，椎骨、肋与手足短骨按代表块收录。</p>
+        <div class="kb-cats" id="kbCats">
+          <a class="kb-cat" data-g="skull" href="kb-cat.html?cat=skull"><strong>颅骨</strong><small>23 块 · 收录 15 种</small></a>
+          <a class="kb-cat" data-g="trunk" href="kb-cat.html?cat=trunk"><strong>躯干骨</strong><small>51 块 · 收录 9 种</small></a>
+          <a class="kb-cat" data-g="upper" href="kb-cat.html?cat=upper"><strong>上肢骨</strong><small>64 块 · 收录 15 种</small></a>
+          <a class="kb-cat" data-g="lower" href="kb-cat.html?cat=lower"><strong>下肢骨</strong><small>62 块 · 收录 14 种</small></a>
+        </div>
+        <p class="hint kb-usage">鼠标悬停模型任一区域即高光，点击进入该分区；触屏可直接点按模型，或使用上方分区卡片。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>骨图渲染自 BodyParts3D, © The Database Center for Life Science（CC BY-SA 2.1 JP，骨图同许可共享）</p>
+    <p>尾骨图版：Gray's Anatomy（1918，公有领域） · 仅供解剖学学习使用，不构成诊疗建议</p>
+  </footer>
+</div>
+<script src="kb.js?v=2"></script>
+</body>
+</html>

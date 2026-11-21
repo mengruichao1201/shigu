@@ -1,0 +1,15 @@
+# 大体积素材与生成物不进仓库（微信/网盘另传）
+bone-library/_source/
+bone-library/_body/
+bone-library/0[1-4]_*/
+bone-quiz/dist/
+*.zip
+
+# 站点发布绑定（仅本机，勿共享）
+*.qoder.site
+
+# 环境杂项
+__pycache__/
+node_modules/
+Thumbs.db
+.DS_Store

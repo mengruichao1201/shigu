@@ -1,0 +1,915 @@
+{
+ "ver": "2026-11-20T15:05:17",
+ "cats": [
+  {
+   "id": "skull",
+   "name": "颅骨",
+   "pieces": "23 块",
+   "blurb": "脑颅 8 块围成颅腔保护脑，面颅 15 块构成面部支架；除下颌骨与舌骨外，各骨借缝或软骨牢固相连。本库收录 15 种，成对骨取右侧。"
+  },
+  {
+   "id": "trunk",
+   "name": "躯干骨",
+   "pieces": "51 块",
+   "blurb": "椎骨 26（颈 7、胸 12、腰 5、骶 1、尾 1）、肋 12 对、胸骨 1，构成脊柱与胸廓：支持体重、保护心肺。椎骨与肋按代表块收录，共 9 种。"
+  },
+  {
+   "id": "upper",
+   "name": "上肢骨",
+   "pieces": "64 块",
+   "blurb": "锁骨、肩胛骨、肱骨、桡骨、尺骨各 2，腕骨 16、掌骨 10、指骨 28。借肩关节与躯干相连，轻巧而灵活，以精细动作为主。收录 15 种。"
+  },
+  {
+   "id": "lower",
+   "name": "下肢骨",
+   "pieces": "62 块",
+   "blurb": "髋骨、股骨、髌骨、胫骨、腓骨各 2，跗骨 14、跖骨 10、趾骨 28。承重与行走，粗壮稳固。收录 14 种。"
+  }
+ ],
+ "bones": [
+  {
+   "id": "frontal_bone",
+   "cn": "额骨",
+   "en": "frontal bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/frontal_bone_front.webp",
+    "side": "bones/skull/frontal_bone_side.webp",
+    "back": "bones/skull/frontal_bone_back.webp"
+   },
+   "intro": "构成前额与眶上壁的单块扁骨，内含额窦。",
+   "points": [
+    "鳞部构成额部轮廓",
+    "眶部构成眶顶",
+    "鼻部与筛骨、鼻骨相接"
+   ]
+  },
+  {
+   "id": "parietal_bone",
+   "cn": "顶骨",
+   "en": "parietal bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/parietal_bone_front.webp",
+    "side": "bones/skull/parietal_bone_side.webp",
+    "back": "bones/skull/parietal_bone_back.webp"
+   },
+   "intro": "成对扁骨，构成颅顶两侧壁。",
+   "points": [
+    "冠状缝接额骨",
+    "矢状缝接对侧顶骨",
+    "人字缝接枕骨"
+   ]
+  },
+  {
+   "id": "temporal_bone",
+   "cn": "颞骨",
+   "en": "temporal bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/temporal_bone_front.webp",
+    "side": "bones/skull/temporal_bone_side.webp",
+    "back": "bones/skull/temporal_bone_back.webp"
+   },
+   "intro": "成对，位于颅侧壁下部并参与颅底构成。",
+   "points": [
+    "分鳞部、鼓部、岩部",
+    "岩部内藏位听器",
+    "下颌窝与下颌骨髁突构成颞下颌关节"
+   ]
+  },
+  {
+   "id": "occipital_bone",
+   "cn": "枕骨",
+   "en": "occipital bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/occipital_bone_front.webp",
+    "side": "bones/skull/occipital_bone_side.webp",
+    "back": "bones/skull/occipital_bone_back.webp"
+   },
+   "intro": "单块，位于颅的后下壁。",
+   "points": [
+    "枕骨大孔通椎管",
+    "枕髁与寰椎相关节",
+    "上、下项线供颈肌附着"
+   ]
+  },
+  {
+   "id": "sphenoid_bone",
+   "cn": "蝶骨",
+   "en": "sphenoid bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/sphenoid_bone_front.webp",
+    "side": "bones/skull/sphenoid_bone_side.webp",
+    "back": "bones/skull/sphenoid_bone_back.webp"
+   },
+   "intro": "单块，居颅底中央，形似蝴蝶。",
+   "points": [
+    "分体、大翼、小翼、翼突",
+    "垂体窝容纳垂体",
+    "视神经管、眶上裂等孔裂通行神经血管"
+   ]
+  },
+  {
+   "id": "ethmoid_bone",
+   "cn": "筛骨",
+   "en": "ethmoid bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/ethmoid_bone_front.webp",
+    "side": "bones/skull/ethmoid_bone_side.webp",
+    "back": "bones/skull/ethmoid_bone_back.webp"
+   },
+   "intro": "单块，介于鼻腔顶与眶内侧壁之间。",
+   "points": [
+    "筛板构成颅前窝底",
+    "筛窦开口于鼻腔",
+    "垂直板参与鼻中隔"
+   ]
+  },
+  {
+   "id": "mandible",
+   "cn": "下颌骨",
+   "en": "mandible",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/mandible_front.webp",
+    "side": "bones/skull/mandible_side.webp",
+    "back": "bones/skull/mandible_back.webp"
+   },
+   "intro": "面颅中唯一能活动的骨，呈马蹄铁形。",
+   "points": [
+    "分一体两支",
+    "髁突参与颞下颌关节",
+    "牙槽突容纳下牙"
+   ]
+  },
+  {
+   "id": "maxilla",
+   "cn": "上颌骨",
+   "en": "maxilla",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/maxilla_front.webp",
+    "side": "bones/skull/maxilla_side.webp",
+    "back": "bones/skull/maxilla_back.webp"
+   },
+   "intro": "成对，构成面中部支架。",
+   "points": [
+    "内含上颌窦",
+    "牙槽突容纳上牙",
+    "参与眶底、鼻腔外侧壁与硬腭"
+   ]
+  },
+  {
+   "id": "zygomatic_bone",
+   "cn": "颧骨",
+   "en": "zygomatic bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/zygomatic_bone_front.webp",
+    "side": "bones/skull/zygomatic_bone_side.webp",
+    "back": "bones/skull/zygomatic_bone_back.webp"
+   },
+   "intro": "成对，构成面颊隆起与眶外下壁。",
+   "points": [
+    "与颞骨颧突构成颧弓",
+    "借额突、上颌突、颞突三向连接"
+   ]
+  },
+  {
+   "id": "nasal_bone",
+   "cn": "鼻骨",
+   "en": "nasal bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/nasal_bone_front.webp",
+    "side": "bones/skull/nasal_bone_side.webp",
+    "back": "bones/skull/nasal_bone_back.webp"
+   },
+   "intro": "成对小骨，构成鼻背支架。",
+   "points": [
+    "上接额骨鼻部",
+    "下外侧接上颌骨额突",
+    "面部外伤时易骨折"
+   ]
+  },
+  {
+   "id": "lacrimal_bone",
+   "cn": "泪骨",
+   "en": "lacrimal bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/lacrimal_bone_front.webp",
+    "side": "bones/skull/lacrimal_bone_side.webp",
+    "back": "bones/skull/lacrimal_bone_back.webp"
+   },
+   "intro": "成对，眶内侧壁最前部的小薄骨。",
+   "points": [
+    "与上颌骨额突围成泪囊窝",
+    "泪囊向下通鼻泪管"
+   ]
+  },
+  {
+   "id": "palatine_bone",
+   "cn": "腭骨",
+   "en": "palatine bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/palatine_bone_front.webp",
+    "side": "bones/skull/palatine_bone_side.webp",
+    "back": "bones/skull/palatine_bone_back.webp"
+   },
+   "intro": "成对 L 形小骨，位于鼻腔后部。",
+   "points": [
+    "水平板构成硬腭后 1/3",
+    "垂直板参与鼻腔外侧壁"
+   ]
+  },
+  {
+   "id": "inferior_nasal_concha",
+   "cn": "下鼻甲",
+   "en": "inferior nasal concha",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/inferior_nasal_concha_front.webp",
+    "side": "bones/skull/inferior_nasal_concha_side.webp",
+    "back": "bones/skull/inferior_nasal_concha_back.webp"
+   },
+   "intro": "成对卷曲薄骨，附于鼻腔外侧壁。",
+   "points": [
+    "为独立骨，非筛骨一部分",
+    "增大鼻腔黏膜面积",
+    "下方为下鼻道"
+   ]
+  },
+  {
+   "id": "vomer",
+   "cn": "犁骨",
+   "en": "vomer",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/vomer_front.webp",
+    "side": "bones/skull/vomer_side.webp",
+    "back": "bones/skull/vomer_back.webp"
+   },
+   "intro": "单块薄骨，构成鼻中隔后下部。",
+   "points": [
+    "上接筛骨垂直板",
+    "下接上颌骨与腭骨的腭突"
+   ]
+  },
+  {
+   "id": "hyoid_bone",
+   "cn": "舌骨",
+   "en": "hyoid bone",
+   "cat": "skull",
+   "views": {
+    "front": "bones/skull/hyoid_bone_front.webp",
+    "side": "bones/skull/hyoid_bone_side.webp",
+    "back": "bones/skull/hyoid_bone_back.webp"
+   },
+   "intro": "单块 U 形小骨，悬于颈部皮下。",
+   "points": [
+    "不与任何骨直接相关节",
+    "借肌和韧带悬于颞骨茎突",
+    "为吞咽与发音肌的附着点"
+   ]
+  },
+  {
+   "id": "atlas",
+   "cn": "寰椎_C1",
+   "en": "atlas (C1)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/atlas_front.webp",
+    "side": "bones/trunk/atlas_side.webp",
+    "back": "bones/trunk/atlas_back.webp"
+   },
+   "intro": "第 1 颈椎，无椎体与棘突，呈环形。",
+   "points": [
+    "侧块上关节凹接枕髁",
+    "前弓后面有齿突凹",
+    "与枢椎共司点头与旋转"
+   ]
+  },
+  {
+   "id": "axis",
+   "cn": "枢椎_C2",
+   "en": "axis (C2)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/axis_front.webp",
+    "side": "bones/trunk/axis_side.webp",
+    "back": "bones/trunk/axis_back.webp"
+   },
+   "intro": "第 2 颈椎，椎体向上伸出齿突。",
+   "points": [
+    "齿突作旋转轴",
+    "寰枢关节司摇头",
+    "棘突粗大、末端分叉"
+   ]
+  },
+  {
+   "id": "cervical_vertebra",
+   "cn": "颈椎_C7",
+   "en": "cervical vertebra (C7, vertebra prominens)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/cervical_vertebra_front.webp",
+    "side": "bones/trunk/cervical_vertebra_side.webp",
+    "back": "bones/trunk/cervical_vertebra_back.webp"
+   },
+   "intro": "颈椎共 7 块；C7 棘突特长，称隆椎。",
+   "points": [
+    "横突孔通椎动脉",
+    "椎体小、椎孔大",
+    "C7 棘突为计数椎骨的标志"
+   ]
+  },
+  {
+   "id": "thoracic_vertebra",
+   "cn": "胸椎_T5",
+   "en": "thoracic vertebra (T5)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/thoracic_vertebra_front.webp",
+    "side": "bones/trunk/thoracic_vertebra_side.webp",
+    "back": "bones/trunk/thoracic_vertebra_back.webp"
+   },
+   "intro": "胸椎共 12 块，与肋相关节。",
+   "points": [
+    "椎体两侧有肋凹",
+    "横突末端有横突肋凹",
+    "棘突长，叠瓦状斜向下"
+   ]
+  },
+  {
+   "id": "lumbar_vertebra",
+   "cn": "腰椎_L3",
+   "en": "lumbar vertebra (L3)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/lumbar_vertebra_front.webp",
+    "side": "bones/trunk/lumbar_vertebra_side.webp",
+    "back": "bones/trunk/lumbar_vertebra_back.webp"
+   },
+   "intro": "腰椎共 5 块，椎体粗壮、承重大。",
+   "points": [
+    "椎孔呈三角形",
+    "棘突宽短呈板状、水平后伸",
+    "关节突关节面近矢状位"
+   ]
+  },
+  {
+   "id": "sacrum",
+   "cn": "骶骨",
+   "en": "sacrum",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/sacrum_front.webp",
+    "side": "bones/trunk/sacrum_side.webp",
+    "back": "bones/trunk/sacrum_back.webp"
+   },
+   "intro": "5 块骶椎融合成的三角形骨。",
+   "points": [
+    "底前缘的岬为产科标志",
+    "骶前、后孔通骶神经",
+    "耳状面与髋骨构成骶髂关节"
+   ]
+  },
+  {
+   "id": "rib",
+   "cn": "肋骨_第7肋",
+   "en": "rib (7th, typical)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/rib_front.webp",
+    "side": "bones/trunk/rib_side.webp",
+    "back": "bones/trunk/rib_back.webp"
+   },
+   "intro": "肋共 12 对；第 7 肋为真肋代表。",
+   "points": [
+    "1–7 真肋借肋软骨直连胸骨",
+    "8–10 假肋连于上位肋软骨",
+    "11–12 浮肋前端游离"
+   ]
+  },
+  {
+   "id": "sternum",
+   "cn": "胸骨",
+   "en": "sternum (manubrium + body + xiphoid)",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/sternum_front.webp",
+    "side": "bones/trunk/sternum_side.webp",
+    "back": "bones/trunk/sternum_back.webp"
+   },
+   "intro": "位于胸前壁正中的扁骨。",
+   "points": [
+    "分柄、体、剑突三部",
+    "胸骨角平对第 2 肋",
+    "两侧接肋切迹"
+   ]
+  },
+  {
+   "id": "clavicle",
+   "cn": "锁骨",
+   "en": "clavicle",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/clavicle_front.webp",
+    "side": "bones/upper/clavicle_side.webp",
+    "back": "bones/upper/clavicle_back.webp"
+   },
+   "intro": "S 形长骨，横架于胸廓前上方。",
+   "points": [
+    "内端接胸骨、外端接肩峰",
+    "上肢与躯干间唯一的骨性支架",
+    "中、外 1/3 交界处易骨折"
+   ]
+  },
+  {
+   "id": "scapula",
+   "cn": "肩胛骨",
+   "en": "scapula",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/scapula_front.webp",
+    "side": "bones/upper/scapula_side.webp",
+    "back": "bones/upper/scapula_back.webp"
+   },
+   "intro": "三角形扁骨，贴于胸廓后外侧面。",
+   "points": [
+    "关节盂接肱骨头",
+    "肩峰为肩部最高点",
+    "喙突供肌与韧带附着"
+   ]
+  },
+  {
+   "id": "humerus",
+   "cn": "肱骨",
+   "en": "humerus",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/humerus_front.webp",
+    "side": "bones/upper/humerus_side.webp",
+    "back": "bones/upper/humerus_back.webp"
+   },
+   "intro": "上臂的长骨。",
+   "points": [
+    "肱骨头接关节盂",
+    "大、小结节供肩袖肌附着",
+    "下端滑车与肱骨小头接前臂骨"
+   ]
+  },
+  {
+   "id": "radius",
+   "cn": "桡骨",
+   "en": "radius",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/radius_front.webp",
+    "side": "bones/upper/radius_side.webp",
+    "back": "bones/upper/radius_back.webp"
+   },
+   "intro": "前臂外侧（拇指侧）的长骨。",
+   "points": [
+    "桡骨头接肱骨小头",
+    "下端粗大、接腕骨",
+    "与尺骨构成桡尺近、远侧关节，司旋前旋后"
+   ]
+  },
+  {
+   "id": "ulna",
+   "cn": "尺骨",
+   "en": "ulna",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/ulna_front.webp",
+    "side": "bones/upper/ulna_side.webp",
+    "back": "bones/upper/ulna_back.webp"
+   },
+   "intro": "前臂内侧（小指侧）的长骨。",
+   "points": [
+    "滑车切迹抱肱骨滑车",
+    "鹰嘴为肘后皮下标志",
+    "下端细小，头接桡骨"
+   ]
+  },
+  {
+   "id": "scaphoid",
+   "cn": "手舟骨",
+   "en": "scaphoid",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/scaphoid_front.webp",
+    "side": "bones/upper/scaphoid_side.webp",
+    "back": "bones/upper/scaphoid_back.webp"
+   },
+   "intro": "近侧列腕骨外侧者，形似小船。",
+   "points": [
+    "腰部血供差，骨折易不愈合",
+    "鼻烟窝压痛为骨折常见体征"
+   ]
+  },
+  {
+   "id": "lunate",
+   "cn": "月状骨",
+   "en": "lunate",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/lunate_front.webp",
+    "side": "bones/upper/lunate_side.webp",
+    "back": "bones/upper/lunate_back.webp"
+   },
+   "intro": "近侧列腕骨中央者，呈半月形。",
+   "points": [
+    "与桡骨下端相关节",
+    "脱位可压迫正中神经"
+   ]
+  },
+  {
+   "id": "triquetral",
+   "cn": "三角骨",
+   "en": "triquetral",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/triquetral_front.webp",
+    "side": "bones/upper/triquetral_side.webp",
+    "back": "bones/upper/triquetral_back.webp"
+   },
+   "intro": "近侧列腕骨内侧者。",
+   "points": [
+    "掌侧面接豌豆骨",
+    "参与腕尺侧稳定"
+   ]
+  },
+  {
+   "id": "pisiform",
+   "cn": "豌豆骨",
+   "en": "pisiform",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/pisiform_front.webp",
+    "side": "bones/upper/pisiform_side.webp",
+    "back": "bones/upper/pisiform_back.webp"
+   },
+   "intro": "籽骨样小骨，位于三角骨掌侧。",
+   "points": [
+    "包于尺侧腕屈肌腱内",
+    "为腕尺侧的皮下标志"
+   ]
+  },
+  {
+   "id": "trapezium",
+   "cn": "大多角骨",
+   "en": "trapezium",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/trapezium_front.webp",
+    "side": "bones/upper/trapezium_side.webp",
+    "back": "bones/upper/trapezium_back.webp"
+   },
+   "intro": "远侧列腕骨外侧者。",
+   "points": [
+    "鞍状关节面接第 1 掌骨",
+    "司拇指对掌的灵活运动"
+   ]
+  },
+  {
+   "id": "trapezoid",
+   "cn": "小多角骨",
+   "en": "trapezoid",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/trapezoid_front.webp",
+    "side": "bones/upper/trapezoid_side.webp",
+    "back": "bones/upper/trapezoid_back.webp"
+   },
+   "intro": "远侧列腕骨中最小者。",
+   "points": [
+    "接第 2 掌骨底",
+    "与大多角骨、头状骨相邻"
+   ]
+  },
+  {
+   "id": "capitate",
+   "cn": "头状骨",
+   "en": "capitate",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/capitate_front.webp",
+    "side": "bones/upper/capitate_side.webp",
+    "back": "bones/upper/capitate_back.webp"
+   },
+   "intro": "腕骨中最大者，居中央。",
+   "points": [
+    "头接月骨",
+    "底接第 3 掌骨",
+    "为腕骨排列的中心标志"
+   ]
+  },
+  {
+   "id": "hamate",
+   "cn": "钩骨",
+   "en": "hamate",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/hamate_front.webp",
+    "side": "bones/upper/hamate_side.webp",
+    "back": "bones/upper/hamate_back.webp"
+   },
+   "intro": "远侧列腕骨内侧者。",
+   "points": [
+    "掌侧钩突构成腕管尺侧壁",
+    "接第 4、5 掌骨"
+   ]
+  },
+  {
+   "id": "metacarpal",
+   "cn": "掌骨_第3",
+   "en": "metacarpal (3rd)",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/metacarpal_front.webp",
+    "side": "bones/upper/metacarpal_side.webp",
+    "back": "bones/upper/metacarpal_back.webp"
+   },
+   "intro": "掌骨共 5 块，第 3 掌骨为代表。",
+   "points": [
+    "底接腕骨、头接指骨",
+    "第 1 掌骨短粗、司拇指",
+    "第 3 掌骨底背面有茎突"
+   ]
+  },
+  {
+   "id": "proximal_phalanx_of_finger",
+   "cn": "指骨_近节",
+   "en": "proximal phalanx of finger (middle)",
+   "cat": "upper",
+   "views": {
+    "front": "bones/upper/proximal_phalanx_of_finger_front.webp",
+    "side": "bones/upper/proximal_phalanx_of_finger_side.webp",
+    "back": "bones/upper/proximal_phalanx_of_finger_back.webp"
+   },
+   "intro": "指骨每手 14 块：拇指 2 节，余指 3 节。",
+   "points": [
+    "近节底接掌骨头",
+    "滑车与中节相关节",
+    "骨折后影响握拳功能"
+   ]
+  },
+  {
+   "id": "hip_bone",
+   "cn": "髋骨",
+   "en": "hip bone",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/hip_bone_front.webp",
+    "side": "bones/lower/hip_bone_side.webp",
+    "back": "bones/lower/hip_bone_back.webp"
+   },
+   "intro": "髂、坐、耻三骨融合成的不规则骨。",
+   "points": [
+    "三骨会于髋臼、接股骨头",
+    "耳状面接骶骨",
+    "两侧髋骨与骶尾骨围成骨盆"
+   ]
+  },
+  {
+   "id": "femur",
+   "cn": "股骨",
+   "en": "femur",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/femur_front.webp",
+    "side": "bones/lower/femur_side.webp",
+    "back": "bones/lower/femur_back.webp"
+   },
+   "intro": "人体最长、最粗的长骨。",
+   "points": [
+    "股骨头接髋臼",
+    "颈干角约 125°",
+    "大转子为体表标志；下端内、外侧髁接胫骨"
+   ]
+  },
+  {
+   "id": "patella",
+   "cn": "髌骨",
+   "en": "patella",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/patella_front.webp",
+    "side": "bones/lower/patella_side.webp",
+    "back": "bones/lower/patella_back.webp"
+   },
+   "intro": "人体最大的籽骨，包于股四头肌腱内。",
+   "points": [
+    "后面关节面接股骨髌面",
+    "保护膝关节并增大股四头肌力臂"
+   ]
+  },
+  {
+   "id": "tibia",
+   "cn": "胫骨",
+   "en": "tibia",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/tibia_front.webp",
+    "side": "bones/lower/tibia_side.webp",
+    "back": "bones/lower/tibia_back.webp"
+   },
+   "intro": "小腿内侧粗大的承重骨。",
+   "points": [
+    "上端内、外侧髁接股骨",
+    "胫骨粗隆接髌韧带",
+    "下端内踝为踝部标志"
+   ]
+  },
+  {
+   "id": "fibula",
+   "cn": "腓骨",
+   "en": "fibula",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/fibula_front.webp",
+    "side": "bones/lower/fibula_side.webp",
+    "back": "bones/lower/fibula_back.webp"
+   },
+   "intro": "小腿外侧的细长骨，不直接承重。",
+   "points": [
+    "腓骨头接胫骨外侧髁",
+    "下端外踝构成踝穴外壁",
+    "供小腿肌附着"
+   ]
+  },
+  {
+   "id": "talus",
+   "cn": "距骨",
+   "en": "talus",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/talus_front.webp",
+    "side": "bones/lower/talus_side.webp",
+    "back": "bones/lower/talus_back.webp"
+   },
+   "intro": "跗骨最上方者，承接小腿重量。",
+   "points": [
+    "滑车接胫、腓骨下端",
+    "头接足舟骨",
+    "无肌附着、血供较差"
+   ]
+  },
+  {
+   "id": "calcaneus",
+   "cn": "跟骨",
+   "en": "calcaneus",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/calcaneus_front.webp",
+    "side": "bones/lower/calcaneus_side.webp",
+    "back": "bones/lower/calcaneus_back.webp"
+   },
+   "intro": "最大的跗骨，构成足跟。",
+   "points": [
+    "跟结节接跟腱",
+    "上面接距骨",
+    "载距突承托距骨颈"
+   ]
+  },
+  {
+   "id": "navicular_bone_of_foot",
+   "cn": "足舟骨",
+   "en": "navicular bone of foot",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/navicular_bone_of_foot_front.webp",
+    "side": "bones/lower/navicular_bone_of_foot_side.webp",
+    "back": "bones/lower/navicular_bone_of_foot_back.webp"
+   },
+   "intro": "跗骨内侧者，位于距骨头前方。",
+   "points": [
+    "内侧面舟骨粗隆为体表标志",
+    "前接三块楔骨"
+   ]
+  },
+  {
+   "id": "cuboid_bone",
+   "cn": "骰骨",
+   "en": "cuboid bone",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/cuboid_bone_front.webp",
+    "side": "bones/lower/cuboid_bone_side.webp",
+    "back": "bones/lower/cuboid_bone_back.webp"
+   },
+   "intro": "跗骨外侧者。",
+   "points": [
+    "后接跟骨、前接第 4、5 跖骨",
+    "下面有腓骨长肌腱沟"
+   ]
+  },
+  {
+   "id": "medial_cuneiform",
+   "cn": "内侧楔骨",
+   "en": "medial cuneiform",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/medial_cuneiform_front.webp",
+    "side": "bones/lower/medial_cuneiform_side.webp",
+    "back": "bones/lower/medial_cuneiform_back.webp"
+   },
+   "intro": "三块楔骨中最大者。",
+   "points": [
+    "前接第 1 跖骨",
+    "与足舟骨、中间楔骨相邻"
+   ]
+  },
+  {
+   "id": "intermediate_cuneiform",
+   "cn": "中间楔骨",
+   "en": "intermediate cuneiform",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/intermediate_cuneiform_front.webp",
+    "side": "bones/lower/intermediate_cuneiform_side.webp",
+    "back": "bones/lower/intermediate_cuneiform_back.webp"
+   },
+   "intro": "三块楔骨中最小者。",
+   "points": [
+    "前接第 2 跖骨",
+    "嵌于内、外侧楔骨之间"
+   ]
+  },
+  {
+   "id": "lateral_cuneiform",
+   "cn": "外侧楔骨",
+   "en": "lateral cuneiform",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/lateral_cuneiform_front.webp",
+    "side": "bones/lower/lateral_cuneiform_side.webp",
+    "back": "bones/lower/lateral_cuneiform_back.webp"
+   },
+   "intro": "居中间楔骨与骰骨之间。",
+   "points": [
+    "前接第 3 跖骨",
+    "参与足横弓构成"
+   ]
+  },
+  {
+   "id": "metatarsal",
+   "cn": "跖骨_第3",
+   "en": "metatarsal (3rd)",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/metatarsal_front.webp",
+    "side": "bones/lower/metatarsal_side.webp",
+    "back": "bones/lower/metatarsal_back.webp"
+   },
+   "intro": "跖骨共 5 块，第 3 跖骨为代表。",
+   "points": [
+    "底接跗骨、头接趾骨",
+    "第 1 跖骨粗大、承重多",
+    "第 5 跖骨底粗隆易撕脱骨折"
+   ]
+  },
+  {
+   "id": "proximal_phalanx_of_toe",
+   "cn": "趾骨_近节",
+   "en": "proximal phalanx of toe (2nd)",
+   "cat": "lower",
+   "views": {
+    "front": "bones/lower/proximal_phalanx_of_toe_front.webp",
+    "side": "bones/lower/proximal_phalanx_of_toe_side.webp",
+    "back": "bones/lower/proximal_phalanx_of_toe_back.webp"
+   },
+   "intro": "趾骨每足 14 块：拇趾 2 节，余趾 3 节。",
+   "points": [
+    "近节底接跖骨头",
+    "较指骨短小",
+    "拇趾末节承托蹬地力"
+   ]
+  },
+  {
+   "id": "coccyx",
+   "cn": "尾骨",
+   "en": "coccyx",
+   "cat": "trunk",
+   "views": {
+    "front": "bones/trunk/coccyx_front.webp",
+    "side": "bones/trunk/coccyx_side.webp",
+    "back": "bones/trunk/coccyx_back.webp"
+   },
+   "intro": "3–4 块退化尾椎融合的小三角骨。",
+   "points": [
+    "上接骶骨尖",
+    "为盆底肌与韧带附着点",
+    "跌倒时易挫伤"
+   ]
+  }
+ ]
+}
