@@ -397,7 +397,7 @@ function onStageKey(ev) {
 
 function onChoiceClick(ev) {
   const btn = ev.target.closest('.opt');
-  if (!btn || state.locked) return;
+  if (!btn || state.locked || $('choiceArea').hidden) return;
   const q = state.order[state.idx];
   const chosen = q.kind === 'mcq' ? Number(btn.dataset.val) : btn.dataset.val === 'true';
   const ok = chosen === q.answer;
