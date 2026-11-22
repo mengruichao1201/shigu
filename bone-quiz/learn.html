@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>学习 · 识骨</title>
+<meta name="description" content="识骨学习模块：按颅骨、躯干、上肢、下肢四条路径逐块学骨，三视角图 + 简介 + 要点，标记已学记录进度，学完本部位自测。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='9' width='7' height='19' rx='3.5' fill='%23b4432f'/%3E%3Ccircle cx='10.5' cy='7' r='4.5' fill='%23b4432f'/%3E%3Crect x='19' y='4' width='7' height='19' rx='3.5' fill='%2329241d'/%3E%3Ccircle cx='22.5' cy='26' r='3.5' fill='%2329241d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="learn.css?v=1">
+</head>
+<body data-page="learn">
+<div class="page learn-page">
+  <header class="top">
+    <div class="brand-row">
+      <a class="back" href="index.html">← 首页</a>
+      <span class="track">StudyHack · 学习科研</span>
+    </div>
+    <p class="sub">识骨 · 学习</p>
+  </header>
+
+  <main>
+    <div class="qbar">
+      <h1>按部位学骨</h1>
+      <span class="chip" id="totalChip">已学 0 / 53</span>
+    </div>
+    <p class="kb-blurb">选一个部位，按顺序逐块认识骨：三视角图 + 简介 + 记忆要点，看懂一块标记一块，学完本部位马上自测。</p>
+
+    <section class="card learn-overall" aria-label="总学习进度">
+      <div class="stat-overall">
+        <span class="stat-big" id="doneBig">0</span>
+        <span class="stat-meta" id="doneMeta">/ 53 种已学</span>
+      </div>
+      <div class="bar" id="totalBarWrap" role="progressbar" aria-valuemin="0" aria-valuemax="53" aria-valuenow="0" aria-label="全部骨学习进度">
+        <span class="bar-fill" id="totalBar"></span>
+      </div>
+    </section>
+
+    <div class="learn-cats" id="learnCats"></div>
+    <p class="note block-note">成对骨取右侧；椎骨、肋、掌骨、跖骨、指骨、趾骨按代表块收录。学习进度仅保存在本机浏览器。</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>骨图渲染自 BodyParts3D, © The Database Center for Life Science（CC BY-SA 2.1 JP，骨图同许可共享）</p>
+    <p>尾骨图版：Gray's Anatomy（1918，公有领域） · 仅供解剖学学习使用，不构成诊疗建议</p>
+  </footer>
+</div>
+<script src="learn.js?v=1"></script>
+</body>
+</html>
