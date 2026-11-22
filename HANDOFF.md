@@ -1,7 +1,7 @@
 # 「识骨」学习模块交接文档
 
 > 交付人：孟睿超（山东中医药大学，负责编程 / 交互 / 部署）
-> 接收人：队友（西交利物浦大学，负责学习模块制作 + 内容审核 + 标本照片）
+> 接收人：成子乐（山东中医药大学，GitHub: zlc11508-netizen，负责学习模块制作 + 内容审核 + 标本照片）
 > 日期：2026-11-20 · 线上站点：https://bone-id-trainer-2jxa6z764zs.qoder.zone
 
 ---
@@ -170,7 +170,7 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 - 网络备注：个别网络下 `github.com:443` 的 TLS 会被重置（clone/push 失败）而 `api.github.com` 正常。仓库根 `tools/github-api-push.py` 可经官方 API 完成推送（`py tools/github-api-push.py`，凭据走 git credential，不落盘）；或开代理后 `git -c http.proxy=http://127.0.0.1:7897 push`（端口按本机代理改）。
 - 发布：只有孟睿超账号执行（Qoder Sites 已绑定 projectId）。你本地 `py tools/serve.py` 自测，push 后由他集成发布，发布后群里通知。
 - 共享记忆：仓库根 `HANDOFF.md`（本文档）+ 后续可加 `PROGRESS.md` / `DECISIONS.md`，两边 Qoder 开工先读、收工更新。
-- 页脚署名：把你的真名发孟睿超，替换「队友署名待补（西交利物浦大学）」。
+- 页脚署名：已更新为「孟睿超 · 成子乐（山东中医药大学）」（index / practice / quiz 三页）。
 
 ## 9. 赛务与时间点
 
