@@ -180,6 +180,7 @@
       delete stage.dataset.hover;
     }
     document.querySelectorAll('.hm-region').forEach((a) => a.classList.toggle('on', a.dataset.g === g));
+    document.querySelectorAll('.hm-anno').forEach((s) => s.classList.toggle('on', s.dataset.g === g));
   }
 
   document.querySelectorAll('.hm-region').forEach((a) => {

@@ -7,7 +7,7 @@
 <meta name="description" content="识骨：医学生的骨学学习工具。首页整副骨架可悬停高光、点击进入分区；今日一骨标本签每天换一块；学习、练习、知识库三模块与个人学习数据一目了然。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='9' width='7' height='19' rx='3.5' fill='%23b4432f'/%3E%3Ccircle cx='10.5' cy='7' r='4.5' fill='%23b4432f'/%3E%3Crect x='19' y='4' width='7' height='19' rx='3.5' fill='%2329241d'/%3E%3Ccircle cx='22.5' cy='26' r='3.5' fill='%2329241d'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css?v=6">
-<link rel="stylesheet" href="home.css?v=1">
+<link rel="stylesheet" href="home.css?v=3">
 </head>
 <body class="sh-home">
 <div class="hm-atmo" aria-hidden="true"><div class="hm-plate"></div></div>
@@ -55,7 +55,7 @@
           </span>
           <span class="hm-mtext">
             <h2>学习</h2>
-            <p>按部位逐块认识骨：三视角图 + 记忆要点</p>
+            <p>三视角图与记忆要点，逐块认骨</p>
             <span class="hm-meta" id="learnMeta">四条路径 · 53 种骨 · 学后自测</span>
           </span>
           <span class="hm-arrow" aria-hidden="true">→</span>
@@ -86,14 +86,25 @@
     </section>
 
     <section class="hm-center hm-reveal" style="--d:2" aria-label="可交互骨架">
-      <figure class="hm-stage" id="hmStage" aria-label="人体骨架前面观，分为颅骨、躯干骨、上肢骨、下肢骨四个可点击分区">
-        <img data-g="trunk" src="assets/bones/body_trunk.webp?v=1" alt="">
-        <img data-g="lower" src="assets/bones/body_lower.webp?v=1" alt="">
-        <img data-g="upper" src="assets/bones/body_upper.webp?v=1" alt="">
-        <img data-g="skull" src="assets/bones/body_skull.webp?v=1" alt="">
-        <span class="hm-tag" id="hmTag"></span>
-        <span class="hm-figcap">ANTERIOR VIEW · 800 × 2108</span>
-      </figure>
+      <div class="hm-plateframe">
+        <span class="hm-corner tl" aria-hidden="true"></span>
+        <span class="hm-corner tr" aria-hidden="true"></span>
+        <span class="hm-corner bl" aria-hidden="true"></span>
+        <span class="hm-corner br" aria-hidden="true"></span>
+        <p class="hm-plate-cap">PLATE I · HOMO SAPIENS · 前面观 ANTERIOR VIEW</p>
+        <span class="hm-anno left" data-g="skull" style="--y:10%"><i></i>颅骨<small>SKULL</small></span>
+        <span class="hm-anno left" data-g="trunk" style="--y:25%"><i></i>躯干骨<small>TRUNK</small></span>
+        <span class="hm-anno left" data-g="lower" style="--y:62%"><i></i>下肢骨<small>LOWER</small></span>
+        <span class="hm-anno right" data-g="upper" style="--y:19%"><i></i>上肢骨<small>UPPER</small></span>
+        <figure class="hm-stage" id="hmStage" aria-label="人体骨架前面观，分为颅骨、躯干骨、上肢骨、下肢骨四个可点击分区">
+          <img data-g="trunk" src="assets/bones/body_trunk.webp?v=1" alt="">
+          <img data-g="lower" src="assets/bones/body_lower.webp?v=1" alt="">
+          <img data-g="upper" src="assets/bones/body_upper.webp?v=1" alt="">
+          <img data-g="skull" src="assets/bones/body_skull.webp?v=1" alt="">
+          <span class="hm-tag" id="hmTag"></span>
+        </figure>
+        <p class="hm-scale"><span class="hm-scale-bar" aria-hidden="true"></span>比例示意 · SCHEMATIC SCALE</p>
+      </div>
       <div class="hm-regions" id="hmRegions" role="group" aria-label="骨架分区入口">
         <a class="hm-region" data-g="skull" href="kb-cat.html?cat=skull"><strong>颅骨</strong><small>23 块</small></a>
         <a class="hm-region" data-g="trunk" href="kb-cat.html?cat=trunk"><strong>躯干骨</strong><small>51 块</small></a>
@@ -137,6 +148,6 @@
     <p>仅供解剖学学习使用，不构成诊疗建议</p>
   </footer>
 </div>
-<script src="home.js?v=5"></script>
+<script src="home.js?v=6"></script>
 </body>
 </html>
