@@ -99,8 +99,9 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 | `bonequiz.wrong.v1` | 错题 id 数组；答对自动移出 |
 | `bonequiz.history.v1` | 答题记录 `{id,scope,kind,ok,t}`，上限 500 条 |
 | `bonequiz.prefs.v1` | 练习设置 `{scopes,kinds,n}` |
+| `bonequiz.learn.v1` | 学习进度 `{done:[骨id…], t:时间戳}`，按 id 去重；learn.html / learn-path.html 读写 |
 
-学习模块进度请**新开键**，建议 `bonequiz.learn.v1`（结构自定，写进本文档 §5 备案）。
+学习模块进度键 `bonequiz.learn.v1` 已启用，结构见上表与 §5。
 
 ### 4.4 URL 参数约定
 
@@ -111,7 +112,7 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 
 ### 4.5 缓存版本号规则
 
-- HTML 引用 css/js 一律带 `?v=N`：**改了哪个文件就把对应版本号 +1**（当前 styles v=6 / app v=4 / setup v=2 / kb v=2 / home v=3）。
+- HTML 引用 css/js 一律带 `?v=N`：**改了哪个文件就把对应版本号 +1**（当前 styles v=6 / app v=4 / setup v=2 / kb v=2 / home v=3 / learn css·js v=1）。
 - 骨图 src 带 `?v={bones.json.ver}`；题库 fetch 用 `cache:'no-store'`。
 
 ## 5. 学习模块范围（建议方案，可调整）
@@ -123,8 +124,10 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 1. **`learn.html` 学习首页**：四部位路径卡（颅骨 15 种 / 躯干 9 / 上肢 15 / 下肢 14），每卡显示「已学 x / n」进度条；数据读 bones.json + `bonequiz.learn.v1`。
 2. **`learn-path.html?cat=…` 路径页**：该部位骨列表（复用 kb-cat 的骨卡样式），每块骨一个学习单元：三视角图 + intro + points（直接复用 `kb-bone.html` 亦可，加「标记已学」按钮）；可选加你写的记忆口诀 / 学习提示（bones.json 新增 `learn` 字段）。
 3. **学后自测**：路径页底部「本部位自测」→ `quiz.html?scope={cat}&n=6`；答完回到学习页可见进度。
-4. **进度键建议**：`bonequiz.learn.v1 = { done: ["femur", …], t: 时间戳 }`。
+4. **进度键（已实现）**：`bonequiz.learn.v1 = { done: ["femur", …], t: 时间戳 }`，见 §4.3。
 5. **门户集成**：index.html 的学习卡由灰卡改为可点（这步由孟睿超集成时改，你留好入口即可）。
+
+> 2026-11-22 学习模块已实现：`learn.html`、`learn-path.html?cat=…&bone=…`、`learn.js`、`learn.css`。样式独立成 learn.css（复用 styles.css 变量与组件类，未改 styles.css 与任何现有页面）；路径页为逐块学习流（三视角 + 简介 + 要点 + 标记已学 + 上/下一块 + 本部位自测）。门户学习卡接入待孟睿超集成。
 
 样式要求：复用 `styles.css` 的 CSS 变量与现有组件类（`.card / .bone-card / .back / .chip` 等），暖纸色 + 朱红 + 黛蓝的医学图谱气质，**不引第二套 UI 框架**。移动端 390px 宽必须可用。
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>部位学习 · 识骨</title>
+<meta name="description" content="识骨学习路径：逐块查看骨的前面、侧面、后面三视角图与简介要点，标记已学，学完本部位进入 6 题自测。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='9' width='7' height='19' rx='3.5' fill='%23b4432f'/%3E%3Ccircle cx='10.5' cy='7' r='4.5' fill='%23b4432f'/%3E%3Crect x='19' y='4' width='7' height='19' rx='3.5' fill='%2329241d'/%3E%3Ccircle cx='22.5' cy='26' r='3.5' fill='%2329241d'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="learn.css?v=1">
+</head>
+<body data-page="learn-path">
+<div class="page learn-page">
+  <header class="top">
+    <div class="brand-row">
+      <a class="back" href="learn.html">← 学习首页</a>
+      <span class="track">StudyHack · 学习科研</span>
+    </div>
+    <p class="sub">识骨 · 学习</p>
+    <div class="qbar">
+      <h1 id="catTitle">部位</h1>
+      <span class="chip" id="catChip">已学 0 / 0</span>
+    </div>
+    <div class="bar learn-cat-bar" id="catBarWrap" role="progressbar" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0" aria-label="本部位学习进度">
+      <span class="bar-fill" id="catBar"></span>
+    </div>
+    <nav class="learn-nav" id="boneNav" aria-label="本部位骨列表"></nav>
+  </header>
+
+  <main>
+    <div class="bone-hero">
+      <div class="view-panel">
+        <div class="vp-img" id="vpImg"></div>
+        <div class="view-tabs" id="viewTabs" role="group" aria-label="视角切换">
+          <button class="schip on" data-v="front" aria-pressed="true">前面</button>
+          <button class="schip" data-v="side" aria-pressed="false">侧面</button>
+          <button class="schip" data-v="back" aria-pressed="false">后面</button>
+        </div>
+      </div>
+      <div class="bone-info">
+        <div class="qbar">
+          <h1 id="boneTitle">骨</h1>
+          <span class="chip" id="boneState">未学</span>
+        </div>
+        <p class="bone-en" id="boneEn"></p>
+        <p class="bone-intro" id="boneIntro"></p>
+        <ul class="point-list" id="bonePoints"></ul>
+        <div class="learn-actions">
+          <button class="primary" id="markBtn" type="button" aria-pressed="false">标记已学</button>
+        </div>
+        <div class="bone-nav">
+          <a class="back" id="prevBone" href="#">← 上一块</a>
+          <a class="back" id="nextBone" href="#">下一块 →</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="card learn-quiz" aria-labelledby="quizTitle">
+      <div class="card-head">
+        <h2 id="quizTitle">本部位自测</h2>
+        <span class="note">6 题 · 点图 / 选择 / 判断</span>
+      </div>
+      <p class="note" id="quizNote">学完本部位后检验一下，答错的题自动收进错题本。</p>
+      <a class="learn-quiz-btn" id="quizLink" href="quiz.html">开始自测（6 题）→</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>骨图渲染自 BodyParts3D, © The Database Center for Life Science（CC BY-SA 2.1 JP，骨图同许可共享）</p>
+    <p>尾骨图版：Gray's Anatomy（1918，公有领域） · 仅供解剖学学习使用，不构成诊疗建议</p>
+  </footer>
+</div>
+<script src="learn.js?v=1"></script>
+</body>
+</html>
