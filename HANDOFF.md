@@ -112,7 +112,7 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 
 ### 4.5 缓存版本号规则
 
-- HTML 引用 css/js 一律带 `?v=N`：**改了哪个文件就把对应版本号 +1**（当前 styles v=6 / app v=4 / setup v=2 / kb v=2 / home v=4 / learn css·js v=1）。
+- HTML 引用 css/js 一律带 `?v=N`：**改了哪个文件就把对应版本号 +1**（当前 styles v=6 / app v=4 / setup v=2 / kb v=2 / home v=5 / home css v=1 / learn css·js v=1）。
 - 骨图 src 带 `?v={bones.json.ver}`；题库 fetch 用 `cache:'no-store'`。
 
 ## 5. 学习模块范围（建议方案，可调整）
@@ -128,6 +128,8 @@ handoff/待审核题清单.csv  122 道待审核题（本包根目录也有一�
 5. **门户集成（已完成）**：index.html 学习卡已改活链接 learn.html，home.js 显示「已学 x / 53」进度。
 
 > 2026-11-22 学习模块已实现：`learn.html`、`learn-path.html?cat=…&bone=…`、`learn.js`、`learn.css`。样式独立成 learn.css（复用 styles.css 变量与组件类，未改 styles.css 与任何现有页面）；路径页为逐块学习流（三视角 + 简介 + 要点 + 标记已学 + 上/下一块 + 本部位自测）。门户学习卡接入待孟睿超集成。
+
+> 2026-11-22 首页 v2 重设计（孟睿超）：index.html 重写 + 新增 home.css + home.js v5。中央整副骨架四分区 hover 高光 / 点击进知识库（命中逻辑同 kb.js）、今日一骨标本签（按日期确定性抽骨 + 换一块）、localStorage 数据条（累计答题 / 正确率 / 待复习错题 / 已学，滚动计数）、标本馆视觉（印章 logo / 纸纹网格 / 漂移暖光 / 分层入场）。未改 styles.css 与其他页面；桌面 + 390px 实测通过。
 
 样式要求：复用 `styles.css` 的 CSS 变量与现有组件类（`.card / .bone-card / .back / .chip` 等），暖纸色 + 朱红 + 黛蓝的医学图谱气质，**不引第二套 UI 框架**。移动端 390px 宽必须可用。
 

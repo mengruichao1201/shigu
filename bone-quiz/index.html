@@ -4,56 +4,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>识骨 · 医学生的骨学学习工具</title>
-<meta name="description" content="识骨：医学生的骨学学习工具。按顺序学每一块骨，打乱练选择、判断与点图辨认，知识库随时查阅骨的拆解与图文。">
+<meta name="description" content="识骨：医学生的骨学学习工具。首页整副骨架可悬停高光、点击进入分区；今日一骨标本签每天换一块；学习、练习、知识库三模块与个人学习数据一目了然。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='9' width='7' height='19' rx='3.5' fill='%23b4432f'/%3E%3Ccircle cx='10.5' cy='7' r='4.5' fill='%23b4432f'/%3E%3Crect x='19' y='4' width='7' height='19' rx='3.5' fill='%2329241d'/%3E%3Ccircle cx='22.5' cy='26' r='3.5' fill='%2329241d'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="home.css?v=1">
 </head>
-<body class="home">
-<div class="home-bg" aria-hidden="true"></div>
-<div class="home-wrap">
-  <header class="hero">
-    <h1>识骨</h1>
-    <p class="intro">医学生的骨学学习工具 —— 按顺序学、打乱练、随时查。</p>
+<body class="sh-home">
+<div class="hm-atmo" aria-hidden="true"><div class="hm-plate"></div></div>
+<div class="hm-wrap">
+  <header class="hm-head hm-reveal" style="--d:0">
+    <div class="hm-brand">
+      <span class="hm-seal" aria-hidden="true">识骨</span>
+      <div class="hm-brandtext">
+        <strong>识骨</strong>
+        <small>SHIGU · OSTELOGY TRAINER</small>
+      </div>
+    </div>
+    <span class="chip">StudyHack · 学习科研</span>
   </header>
 
-  <main class="modules" aria-label="功能模块">
-    <a class="module" href="learn.html">
-      <span class="m-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-4.5-2-8-2v14c3.5 0 6 .5 8 2 2-1.5 4.5-2 8-2V4c-3.5 0-6 .5-8 2z"/><path d="M12 6v14"/></svg>
-      </span>
-      <h2>学习</h2>
-      <p class="m-desc">按部位逐块认识骨：三视角图 + 记忆要点</p>
-      <p class="m-meta" id="learnMeta">四条路径 · 53 种骨 · 学后自测</p>
-      <span class="m-arrow" aria-hidden="true">→</span>
-    </a>
+  <main class="hm-grid">
+    <section class="hm-left" aria-label="简介与数据">
+      <p class="hm-kicker hm-reveal" style="--d:1">标本馆式骨学学习 · SPECIMEN-BASED LEARNING</p>
+      <h1 class="hm-title hm-reveal" style="--d:1">医学生的<br>骨学学习工具</h1>
+      <p class="hm-lede hm-reveal" style="--d:2">按顺序学、打乱练、随时查。53 种骨的代表标本、三视角图与记忆要点，218 题混合练习，错题自动收进错题本。</p>
 
-    <a class="module" href="practice.html">
-      <span class="m-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
-      </span>
-      <h2>练习</h2>
-      <p class="m-desc">自选范围与题型，混合出题</p>
-      <p class="m-meta" id="practiceMeta">点图 · 选择 · 判断 · 22 题已开放</p>
-      <span class="m-arrow" aria-hidden="true">→</span>
-    </a>
+      <div class="hm-stats hm-reveal" style="--d:3" aria-label="我的学习数据">
+        <div class="hm-stat">
+          <span class="hm-num" id="stTotal">0</span>
+          <span class="hm-lab">累计答题<small>ANSWERED</small></span>
+        </div>
+        <div class="hm-stat">
+          <span class="hm-num" id="stAcc">—</span>
+          <span class="hm-lab">正确率<small>ACCURACY</small></span>
+        </div>
+        <div class="hm-stat">
+          <span class="hm-num warn" id="stWrong">0</span>
+          <span class="hm-lab">待复习错题<small>TO REVIEW</small></span>
+        </div>
+        <div class="hm-stat">
+          <span class="hm-num" id="stLearn">0 / 53</span>
+          <span class="hm-lab">已学骨<small>LEARNED</small></span>
+        </div>
+      </div>
 
-    <a class="module" href="kb.html">
-      <span class="m-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2.5"/><path d="M12 8v6M12 14l-3.5 6M12 14l3.5 6M5 10.5l7-1.5 7 1.5"/></svg>
-      </span>
-      <h2>知识库</h2>
-      <p class="m-desc">每块骨的拆解分析与图文介绍</p>
-      <p class="m-meta">人体图谱 · 53 种骨条目</p>
-      <span class="m-arrow" aria-hidden="true">→</span>
-    </a>
+      <nav class="hm-modules hm-reveal" style="--d:4" aria-label="功能模块">
+        <a class="hm-mod" href="learn.html">
+          <span class="hm-micon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-4.5-2-8-2v14c3.5 0 6 .5 8 2 2-1.5 4.5-2 8-2V4c-3.5 0-6 .5-8 2z"/><path d="M12 6v14"/></svg>
+          </span>
+          <span class="hm-mtext">
+            <h2>学习</h2>
+            <p>按部位逐块认识骨：三视角图 + 记忆要点</p>
+            <span class="hm-meta" id="learnMeta">四条路径 · 53 种骨 · 学后自测</span>
+          </span>
+          <span class="hm-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="hm-mod" href="practice.html">
+          <span class="hm-micon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          </span>
+          <span class="hm-mtext">
+            <h2>练习</h2>
+            <p>自选范围与题型，混合出题</p>
+            <span class="hm-meta" id="practiceMeta">点图 · 选择 · 判断 · 218 题已开放</span>
+          </span>
+          <span class="hm-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="hm-mod" href="kb.html">
+          <span class="hm-micon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2.5"/><path d="M12 8v6M12 14l-3.5 6M12 14l3.5 6M5 10.5l7-1.5 7 1.5"/></svg>
+          </span>
+          <span class="hm-mtext">
+            <h2>知识库</h2>
+            <p>每块骨的拆解分析与图文介绍</p>
+            <span class="hm-meta">人体图谱 · 53 种骨条目</span>
+          </span>
+          <span class="hm-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </section>
+
+    <section class="hm-center hm-reveal" style="--d:2" aria-label="可交互骨架">
+      <figure class="hm-stage" id="hmStage" aria-label="人体骨架前面观，分为颅骨、躯干骨、上肢骨、下肢骨四个可点击分区">
+        <img data-g="trunk" src="assets/bones/body_trunk.webp?v=1" alt="">
+        <img data-g="lower" src="assets/bones/body_lower.webp?v=1" alt="">
+        <img data-g="upper" src="assets/bones/body_upper.webp?v=1" alt="">
+        <img data-g="skull" src="assets/bones/body_skull.webp?v=1" alt="">
+        <span class="hm-tag" id="hmTag"></span>
+        <span class="hm-figcap">ANTERIOR VIEW · 800 × 2108</span>
+      </figure>
+      <div class="hm-regions" id="hmRegions" role="group" aria-label="骨架分区入口">
+        <a class="hm-region" data-g="skull" href="kb-cat.html?cat=skull"><strong>颅骨</strong><small>23 块</small></a>
+        <a class="hm-region" data-g="trunk" href="kb-cat.html?cat=trunk"><strong>躯干骨</strong><small>51 块</small></a>
+        <a class="hm-region" data-g="upper" href="kb-cat.html?cat=upper"><strong>上肢骨</strong><small>64 块</small></a>
+        <a class="hm-region" data-g="lower" href="kb-cat.html?cat=lower"><strong>下肢骨</strong><small>62 块</small></a>
+      </div>
+      <p class="hm-hint">悬停骨架即高光分区，点击进入知识库；触屏直接点按</p>
+    </section>
+
+    <aside class="hm-right" aria-label="今日标本">
+      <section class="hm-today hm-reveal" style="--d:3" aria-labelledby="todayTitle">
+        <div class="hm-today-head">
+          <h2 id="todayTitle">今日标本<small>TODAY'S SPECIMEN</small></h2>
+          <span class="hm-date" id="todayDate"></span>
+        </div>
+        <figure class="hm-today-fig" id="todayFig">
+          <img id="todayImg" alt="今日标本骨前面观渲染图">
+          <span class="hm-figcap" id="todayNo"></span>
+        </figure>
+        <div class="hm-today-name">
+          <strong id="todayName">加载中…</strong>
+          <em id="todayEn"></em>
+          <span class="chip" id="todayCat"></span>
+        </div>
+        <p class="hm-today-intro" id="todayIntro"></p>
+        <ul class="point-list" id="todayPoints"></ul>
+        <div class="hm-today-actions">
+          <a class="hm-quiz" id="todayQuiz" href="practice.html">去考我 →</a>
+          <div class="hm-today-sub">
+            <a class="ghost hm-kb" id="todayKb" href="kb.html">知识库条目</a>
+            <button class="ghost hm-shuffle" id="shuffleBtn" type="button">⟳ 换一块</button>
+          </div>
+        </div>
+      </section>
+    </aside>
   </main>
 
-  <footer class="site-footer">
-    <p>作者：孟睿超 · 成子乐（山东中医药大学）</p>
-    <p>致谢：参与实测的同学们 · 背景图版 Gray's Anatomy（1918，公有领域）</p>
+  <footer class="site-footer hm-reveal" style="--d:5">
+    <p>骨图渲染自 BodyParts3D, © The Database Center for Life Science（CC BY-SA 2.1 JP，骨图同许可共享）</p>
+    <p>作者：孟睿超 · 成子乐（山东中医药大学） · 水印图版 Gray's Anatomy（1918，公有领域）</p>
     <p>仅供解剖学学习使用，不构成诊疗建议</p>
   </footer>
 </div>
-<script src="home.js?v=4"></script>
+<script src="home.js?v=5"></script>
 </body>
 </html>
